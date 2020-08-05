@@ -1,0 +1,193 @@
+Uncaught Type error Cannot read proerty :
+
+this error occurs when accessing a property of an object that is null
+
+trying to access a DOM element before the DOM is ready
+
+Test if an object is valid before accessing its property
+
+// We want to get the value of an input. 
+var inputVal = document.getElementById("input").value;
+
+This will result in Uncaught TypeError: Cannot read property 'value' of null. The reason will be that the element with id input does not exist.
+
+to aovid this error we must make before accessing the object
+it is not NULL
+
+
+var input = document.getElementById("btn");
+var inputVal = "";
+if (input) {
+    inputVal = input.value;
+}
+
+********************************************************************
+“TypeError: ‘undefined’ is not an object” :
+erroroccurs when the property is accessed or a method is called on an undefined object.
+
+example :
+
+var x;
+
+console.log(x.i);
+
+will through TypeError: ‘undefined’ is not an object” 
+*********************************************************************
+“TypeError: NULL is not a object":
+
+this error occurs when we are tying to access NULL as an object;
+
+example :
+
+var n = NULL;
+
+console.log(n.i);
+
+will through “TypeError: NULL is not a object"
+**********************************************************************
+
+script error:
+
+whent their is a error in the javacript file:
+
+example:
+
+referencing to a undefined functon;
+
+function foo()
+{
+
+boo() ;// here the boo function is not defied 
+}
+
+******************************************************************
+TYPE Error :Object doesnot support poperty:
+
+You can use widely supported filter() method instead
+ of find(). 
+ example where we used filter method instead
+ of find method.
+
+data.filter(function (x) {
+         return x.id === e
+    })[0];
+
+
+*****************************************************************************
+Uncaught TypeError: 'undefined' is not a function 
+
+ JavaScript error that happens when we try to call a function before it is defined.
+
+ we get this error when we try to execute a function that is uninitialized or improperly initialized 
+
+
+example :
+alert(greetings());
+var greetings= function () {
+    return 'Good Morning..!!'
+};
+
+// above code will throug the error  :Uncaught TypeError: 'undefined' is not a function 
+
+because alert(greetings()); is called before the greetings() function is initialized
+
+
+fixed code:
+
+var greetings= function () {
+    return 'Good Morning..!!'
+};
+alert(greetings());
+
+************************************************************************
+Uncaught RangeError: Maximum Call Stack Size Exceeded' Error
+
+It happens when the function call exceeds the call stack limit.
+
+This error is caused mainly due to the following reasons
+
+Non-Terminating Recursive Functions
+
+
+<script>
+fun_first();
+function fun_first(){
+console.log('Hi');
+               fun_first();
+}
+</script>
+
+
+Explanation
+
+In the above example, we are recursively calling fun_first() due to which the error is Uncaught RangeError encountered. The recursive function is called, which then calls another function, and goes on until it exceeds the call stack limit.   
+
+Solution
+
+We should call a recursive function with an If condition. When the code satisfies the condition, the function execution is stopped.
+
+Code Example
+
+<script>
+var i=1;
+fun_first(i);
+function fun_first(i){
+               if (i <= 10){
+                              console.log('Hi');
+                              i=i+1;
+                              fun_first(i);
+               }
+}
+</script>
+********************************************************************
+
+ Uncaught TypeError: Cannot set property
+
+In JavaScript almost everything is an object, null and undefined
+ are exception. When you try to access an undefined variable it 
+always returns undefined and we cannot get or set any property
+ of undefined. In that case, an application will throw Uncaught
+ TypeError cannot set property of undefined .
+
+example:
+
+var array
+array[0] = 10
+console.log(array);
+
+here the array is undefined ccessing it will through the error
+ Uncaught TypeError: Cannot set property
+
+********************************************************************
+ TypeError: cannot read property  length in js
+
+this error occurs when we are trying to access the undefined 
+elemts length
+
+example:
+
+var k;
+
+console.log(k.length);
+
+will throug the error  TypeError: cannot read property  length in js
+
+******************************************************************
+Refference error : event is not defiend
+
+this error occurs when the event handeler is decleared inorrectly
+
+example:
+$('.menuOption').click(function( event ){ // <---- "event" parameter here
+
+    event.preventDefault();
+    var categories = $(this).attr('rel');
+    $('.pages').hide();
+    $(categories).fadeIn();
+
+
+});
+
+
+
+

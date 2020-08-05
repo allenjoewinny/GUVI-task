@@ -1,0 +1,39 @@
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var expected = JSON.stringify({foo: 5, bar: 6});
+var actual = JSON.stringify({foo: 5, bar: 6});
+
+var arg ='detects that two objects are equal';
+
+function assertObjectsEqual(a, b, c)
+{
+    if(c === 'detects that two objects are equal')
+    {
+        if(expected === actual )
+        {
+            console.log('Passed');
+        }
+        else
+        {
+            console.log('Failed');
+        }
+    }
+}
+
+assertObjectsEqual(expected,actual,arg);
+
+//end-here
+});
+
+
