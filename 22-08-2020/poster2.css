@@ -1,0 +1,272 @@
+.round_border {
+  position: absolute;
+  border-radius: 25px;
+  border: 1px dotted white;
+  width: 80%;
+  margin: 1% auto;
+  left: 10%;
+  top: 5%;
+  height: 2230px;
+}
+
+.box_1 {
+  position: relative;
+
+  width: 90%;
+  top: 0;
+  left: 5%;
+  height: 280px;
+  background-color: black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.box_x {
+  position: relative;
+  display: block;
+  width: 80%;
+  left: 10%;
+
+  text-align: center;
+  font-family: monospace;
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg);
+}
+.box_2 {
+  position: relative;
+  width: 100%;
+
+  top: 40%;
+  height: 300px;
+  background-color: black;
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_3 {
+  position: relative;
+
+  width: 90%;
+  left: 5%;
+  height: 300px;
+  background: rgb(223, 224, 213);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.screenaustralia.gov.au/getmedia/f581dee4-9b78-41dc-88f6-84f80117aefb/tid33797-mountain-001-hero.jpg?width=1000&ext=.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+.box_4 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(172, 174, 224);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_4::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://specials-images.forbesimg.com/dam/imageserve/855870076/960x0.jpg?fit=scale);
+  background-size: cover;
+  opacity: 0.1;
+}
+.box_5 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(212, 184, 203);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_5::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.gannett-cdn.com/-mm-/f7bf7c68019b6a8b8fc43d82200f6c0266ab31fd/c=0-20-400-246&r=x803&c=1600x800/local/-/media/2017/10/05/INGroup/Indianapolis/636428023595463331-phonehand2.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+.box_6 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(247, 159, 217);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_6::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://thumbs.dreamstime.com/b/abstract-white-digital-background-spiral-stairs-installation-d-rendering-illustration-161939401.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+.box_7 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(231, 228, 178);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_7::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.pinimg.com/originals/71/61/70/7161703c61bb2e787c2cb716e9a772b3.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.box_8 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 230px;
+  background-color: rgb(187, 192, 191);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+
+.box_9 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  top: -100px;
+  height: 200px;
+  background-color: rgb(187, 192, 191);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.box_10 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(172, 174, 224);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_10::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://johnnymarcondes.files.wordpress.com/2012/01/hunched_should.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+.box_11 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(247, 159, 217);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_11::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://thumbs.dreamstime.com/b/touch-screen-concept-portrait-business-person-touching-button-invisible-image-isolated-dark-gray-background-32504258.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+.box_x_1 {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: 100%;
+  left: 12%;
+  top: 10%;
+  text-align: left;
+  font-family: monospace;
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg);
+}
+
+.box_x_2 {
+  position: relative;
+  top: -10%;
+  width: 80%;
+  height: 100%;
+  font-family: monospace;
+  text-align: right;
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg);
+}
+
+.box_x_3 {
+  position: relative;
+  top: 15%;
+  left: 65%;
+}
+
+.box_x_4 {
+  position: relative;
+  top: 10%;
+  left: 1%;
+}
+
+.box_x_5 {
+  position: relative;
+  top: 10%;
+  margin: auto;
+}
+
+.box_12 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 200px;
+  background-color: rgb(198, 225, 238);
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  transform-origin: top;
+}
+.box_12::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.michaelatma.com/wp-content/uploads/2014/08/a-man-on-top-of-the-mountain.jpg);
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.box_f {
+  position: absolute;
+  top: 4.7%;
+  color: white;
+  left: 45%;
+  width: 220px;
+  background-color: black;
+  font-size: 30px;
+}
