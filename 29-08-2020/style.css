@@ -1,0 +1,193 @@
+.gray {
+  background-color: gray;
+  height: 200px;
+  width: 100%;
+}
+
+.gray_1 {
+  position: relative;
+  background-color: gray;
+  display: flex;
+  top: 15px;
+  height: 50px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  background-color: goldenrod;
+  font-size: 40px;
+  width: 300px;
+  text-align:center ;
+  margin: 0 auto;
+  top:10px;
+}
+
+.roundedImage {
+  position: relative;
+  border: 6px dotted goldenrod;
+  border-radius: 50%;
+  /* padding: 2px; */
+  width: 150px;
+  height: 150px;
+  top: 35px;
+  margin: 0 44%;
+}
+
+.vl {
+  border-left: 2px solid gray;
+  height: 1220px;
+  position: absolute;
+  left: 51%;
+  margin-left: -3px;
+}
+
+.icon {
+  position: absolute;
+  border-radius: 25px;
+  border: 4px dotted goldenrod;
+  padding: 2px;
+  left: 30px;
+  margin: 20;
+}
+
+.h_1 {
+  position: relative;
+
+  left: 80px;
+  margin: 18;
+  top: 30px;
+}
+.h_4 {
+  position: relative;
+
+  left: 60px;
+  margin: 18;
+  top: 10px;
+}
+.block_left {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin: 4%;
+}
+input[type="range"] {
+  /* fix for FF unable to apply focus style bug  */
+  border: 1px solid white;
+
+  /*required for proper track sizing in FF*/
+  width: 80px;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 80px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type="range"]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+input[type="range"]:focus::-moz-range-track {
+  background: #ccc;
+}
+
+.icon_right{
+  position:relative ;
+  border-radius: 25px;
+  border: 4px dotted goldenrod;
+  top: 55px;
+}
+
+.h_2 {
+  position: relative;
+
+   left: 60px; 
+}
+.block_right {
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  padding: 30px 5px;
+  margin: 4%;
+  left: 58%;
+  top: 330px;
+}
+
+
+
+.h_3 {
+  position: absolute;
+
+  left: 63%;
+  top: 725px;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.div_main {
+  display: flex;
+}
+
+.text_center {
+  position: relative;
+  text-justify: auto;
+  left: 50px;
+}
+
+.right
+{
+  position: relative;
+  flex:1;
+   margin-right: 5%; 
+
+}
+
+.left
+{
+  position: relative;
+  flex:1;
+  margin-right: 10%;
+  left:5%;
+}
+
+.text_center_1
+{position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+.span_bold
+{
+  font-weight: bold;
+}
+
+.span_left
+{
+  position: relative;
+  left: 100px;
+}
+
+.white
+{
+  position: relative;
+  width: 100%;
+  top:10px;
+  /* background-color: #ddd; */
+}

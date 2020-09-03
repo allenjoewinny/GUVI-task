@@ -1,0 +1,292 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f0563bc5d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      var div_gray_1 = create_element("div", "gray");
+      document.body.append(div_gray_1);
+
+      var img = create_element("img", "roundedImage");
+      img.id ='id_1';
+      img.src = "https://news.nd.edu/assets/113411/james_brockmole_300.jpg";
+      div_gray_1.appendChild(img);
+      
+
+      
+
+      // var div_2 = create_element("div","white");
+      // div_2.innerHTML ='';
+      // document.body.append(div_2);
+
+     var div_x = create_element("div", "c1");
+     div_x.innerHTML = "BRAIN DUDEY";
+     div_gray_1.appendChild(div_x);
+
+      var div_gray_2 = create_element("div", "gray_1");
+      document.body.append(div_gray_2);
+
+      
+
+      var div_4 = create_element("div", "text_center_1");
+      div_4.innerHTML =
+        "Damen Avwnue,Chicago 99999|999-99-9999|hello@kickresume.com|www.kichresume.com";
+      div_4.style.fontSize = "20px";
+      document.body.append(div_4);
+
+      var hl = create_element("hr");
+      document.body.append(hl);
+
+      var main_div = create_element("div", "div_main");
+      document.body.append(main_div);
+
+      var left_div = create_element("div",'left');
+      main_div.appendChild(left_div);
+
+      var right_div = create_element("div",'right');
+      main_div.appendChild(right_div);
+
+       var left_div_1 =create_element("div");
+        left_div.appendChild(left_div_1);
+
+      var icon_1 = create_element("i", "fas fa-user fa-2x icon ");
+      left_div_1.appendChild(icon_1);
+
+      var hd_1 = create_element("h2", "h_1");
+      hd_1.innerHTML = " Profile";
+      left_div_1.appendChild(hd_1);
+
+      var pg_1 = create_element("P", "block_left");
+      pg_1.innerHTML =
+        "Innovation optimized solution seeker. Excited to be at te development phase of my new carrer as a wed developer. I am ambitious, assiduous,animated,and an alliteration advocate.";
+      left_div_1.appendChild(pg_1);
+
+      var left_div_2 = create_element("div",'block_left');
+        left_div.appendChild(left_div_2);
+
+       var icon_2 = create_element("i", "fas fa-bong fa-2x icon ");
+        left_div_2.appendChild(icon_2);
+
+        var hd_2 = create_element("h2", "h_4");
+            hd_2.innerHTML = "Skills";
+            left_div_2.appendChild(hd_2);
+
+       
+        
+        var sub_1 = create_element('h3' ,'text_center');
+        sub_1.innerHTML ="Technical Skills";
+        left_div_2.appendChild(sub_1);
+
+      
+       var t_1 = create_table('Javascript','80');
+       left_div_2.appendChild(t_1);
+
+       var t_2 = create_row('css', '70');
+        left_div_2.appendChild(t_2);
+
+       var t_3 = create_row('html', '50');
+        left_div_2.appendChild(t_3);
+
+     var t_4 = create_row('React', '70');
+          left_div_2.appendChild(t_4);
+
+      var t_5 = create_row('Redux', '60');
+        left_div_2.appendChild(t_5);
+
+      var t_6 = create_row('Mongo', '40');
+        left_div_2.appendChild(t_6);
+        
+     var t_7 = create_row('Deployment', '80');
+      left_div_2.appendChild(t_7);
+
+      
+      var sub_2 = create_element('h3', 'text_center');
+      sub_2.innerHTML = "Additional Skills";
+      left_div_2.appendChild(sub_2);
+
+      var t_8 = create_row('Project Manger', '80');
+        left_div_2.appendChild(t_8);
+
+      var t_9 = create_row('Recruitment', '60');
+        left_div_2.appendChild(t_9);
+      
+      var t_10 = create_row('Business Development', '50');
+        left_div_2.appendChild(t_10);
+      
+        var t_11 = create_row('Editing', '80');
+          left_div_2.appendChild(t_11);
+
+        var t_12 = create_row('fundrasing', '80');
+          left_div_2.appendChild(t_12);
+
+        var left_div_3 = create_element("div", 'block_left');
+          left_div.appendChild(left_div_3);
+
+          var icon_2 = create_element("i", "fas fa-business-time icon fa-2x ");
+          left_div_3.appendChild(icon_2);
+
+          var hd_3 = create_element("h2", "h_4");
+          hd_3.innerHTML = "  Work experience";
+          left_div_3.appendChild(hd_3);
+          
+          var break_1 =create_element("br");
+          left_div_3.appendChild(break_1);
+
+          var span_11 = create_element("span",'span_bold');
+            span_11.innerHTML = "Event Manager ";
+            left_div_3.appendChild(span_11);
+
+           var span_10 = create_element("span","span_left");
+            span_10.innerHTML = "03/2014-02/2017";
+            left_div_3.appendChild(span_10);
+
+          var break_2 = create_element("br");
+            left_div_3.appendChild(break_2);
+
+           var div_3_1 = create_element("div");
+            div_3_1.innerHTML = "c3 presents,washington DC";
+            left_div_3.appendChild(div_3_1);
+
+          var ul_3 = document.createElement('ul');
+          left_div_3.appendChild(ul_3);
+          
+          var text_3_1 ="Leader and execute all phase of events planning and production spanning comiteerecitment, trannin, vendor relationship and on - site faclitation";
+
+          var li_3_1 = create_li(ul_3, text_3_1);
+
+          var text_3_2 = "Brought new business to the organization througt relentless networking and stewarshi which help the company win the bid for the state department summit on the Middle East and, the companies largest civic event to date, the united state of Women";
+
+            var li_3_2 = create_li(ul_3, text_3_2);
+
+          var text_3_3 = "Exercise fiscal control over budget creation tracking  and reporting.collabrate with emloyeesat all organization levels to advance cohersive operations.";
+
+            var li_3_3 = create_li(ul_3, text_3_3);
+        
+
+              var right_div_1 = create_element("div");
+                right_div.appendChild(right_div_1);
+
+                var icon_4 = create_element("i", "fas fa-business-time icon_right fa-2x");
+                right_div_1.appendChild(icon_4);
+
+                var hd_r_1 = create_element("h2", "h_2");
+                hd_r_1.innerHTML = "Work experience";
+                right_div_1.appendChild(hd_r_1);
+
+                var span_12 = create_element("span","span_bold");
+                span_12.innerHTML = "Community Relation ";
+                right_div_1.appendChild(span_12);
+                
+
+                var span_12 = create_element("span","span_left");
+                  span_12.innerHTML = " 06/2011-01/2014";
+                  right_div_1.appendChild(span_12);
+
+                  var break_4 = create_element("br");
+                    right_div_1.appendChild(break_4);
+
+                var break_4 = create_element("br");
+                right_div_1.appendChild(break_4);
+
+                var div_r_1 = create_element("div");
+                div_r_1.innerHTML = "Elder Housing,Los Angeles";
+                right_div_1.appendChild(div_r_1);
+
+                var ul_r_3 = document.createElement('ul');
+                right_div_1.appendChild(ul_r_3);
+
+                var text_r_1 = " Arranging presentation and pitch desk.";
+
+                var li_r_1 = create_li(ul_r_3, text_r_1);
+
+                var text_r_2 = "Desiging a Pr Plan and establshing important focus points";
+
+                var li_r_2 = create_li(ul_r_3, text_r_2);
+
+                var text_r_3 = "Desiging,creting and managng content accross multiple communication platforms.";
+
+                var li_r_3 = create_li(ul_r_3, text_r_3);
+
+                var text_r_8 = " Building relationships with Key media players.";
+
+                var li_r_3 = create_li(ul_r_3, text_r_8);
+
+                var right_div_2 = create_element("div");
+                  right_div.appendChild(right_div_2);
+
+                  var icon_5 = create_element("i", "fas fa-graduation-cap fa-2x icon_right");
+                  right_div_2.appendChild(icon_5);
+
+                  var hd_r_2 = create_element("h2", "h_2");
+                  hd_r_2.innerHTML = " Education";
+                  right_div_2.appendChild(hd_r_2);
+
+                  var span_13 = create_element("span",'span_bold');
+                  span_13.innerHTML = "Engineering Immersion  ";
+                  right_div_2.appendChild(span_13);
+
+                   var span_14 = create_element("span", 'span_left');
+                    span_14.innerHTML = "  11 / 2018 - 06 / 2018";
+                    right_div_2.appendChild(span_14);
+
+                  var break_5 = create_element("br");
+                  right_div_2.appendChild(break_5);
+
+                  var div_r_2 = create_element("div");
+                  div_r_2.innerHTML = "Thinkful,Chicago,IL";
+                  right_div_2.appendChild(div_r_2);
+
+                  var break_6 = create_element("br");
+                    right_div_2.appendChild(break_6);
+
+                  var div_r_3 = create_element("div");
+                    div_r_3.innerHTML = "project-focused intensive program with emphasis on Mongo, Express, React, and Javascript(MERN) technical stack.";
+                    right_div_2.appendChild(div_r_3);
+
+                  var ul_r_4 = document.createElement('ul');
+                  right_div_2.appendChild(ul_r_4);
+
+                  var text_r_4 = "Developed a full-stack web application Renewu, using React that allows users to explore various aspects of medication.User  progress is stored on a backend created using Nde and MongoDB.";
+
+                  var li_r_1 = create_li(ul_r_4, text_r_4);
+
+                  var text_r_5 = "Developed a full-stack web application Renewu, using React that allows users to explore various aspects of medication.User's progress is stored on a backend created using  Node and MongoDB.";
+
+                  var li_r_2 = create_li(ul_r_4, text_r_5);
+
+                  var text_r_6 = " Developed a concirge app,pley for individuals looking  for curates suggestions when visiting a new place.Reate was used to   develope the front end which includes real time chat, drag and drop and variety of advance features.The backend, built using Node Express, and Mongo, take advantage of well - developed Restful API, Geospatial searchig and user authentication with JWT.";
+
+                  var li_r_3 = create_li(ul_r_4, text_r_6);
+                
+                  var span_15 = create_element("span","span_bold");
+                    span_15.innerHTML = "BA,English ";
+                    right_div_2.appendChild(span_15);
+
+                     var span_16 = create_element("span", "span_left");
+                      span_16.innerHTML = "09 / 2001 - 09 / 2005";
+                      right_div_2.appendChild(span_16);
+                
+                   var break_6 = create_element("br");
+                    right_div_2.appendChild(break_6);
+                  
+                  var div_r_5 = create_element("div");
+                    div_r_5.innerHTML = "University of California,Los Angles";
+                    right_div_2.appendChild(div_r_5);
+
+                    var div_line = create_element('div','vl');
+                    main_div.appendChild(div_line);
+
+    </script> 
+    
+
+    </div>
+  </body>
+</html>
