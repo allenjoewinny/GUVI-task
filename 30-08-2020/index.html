@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+    <style>
+      .cal_grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var div1 = document.createElement("div");
+      div1.setAttribute("id", "cal-g");
+      document.body.append(div1);
+
+      var div2 = document.createElement("div");
+      div2.setAttribute("class", "output");
+
+      div1.append(div2);
+
+      var div4 = document.createElement("div");
+      div4.setAttribute("class",  "current");
+      div4.setAttribute("id", "current_text");
+      div2.append( div4);
+
+      var back = create_button("back", "<-", "Back()");
+      back.setAttribute("class", "span2 butcolor");
+      var ac = create_button("one", "clr", "clr()");
+      ac.setAttribute("class", "span2 butcolor");
+      var btn1 = create_button("one", "1", "click_add('1')", "butcolor");
+      var btn2 = create_button("two", "2", "click_add('2')", "butcolor");
+      var btn3 = create_button("three", "3", "click_add('3')", "butcolor");
+      var btn_add = create_button("add", "+", "click_add('+')", "butcolor");
+      var btn4 = create_button("four", "4", "click_add('4')", "butcolor");
+      var btn5 = create_button("five", "5", "click_add('5')", "butcolor");
+      var btn6 = create_button("six", "6", "click_add('6')", "butcolor");
+      var btn_sub = create_button("sub", "-", "click_add('-')", "butcolor");
+      var btn7 = create_button("seven", "7", "click_add('7')", "butcolor");
+      var btn8 = create_button("eight", "8", "click_add('8')", "butcolor");
+      var btn9 = create_button("nine", "9", "click_add('9')", "butcolor");
+      var btn0 = create_button("zero", "0", "click_add('0')", "butcolor");
+      var btn_o = create_button("0", "(", "click_add('(')", "butcolor");
+      var btn_c = create_button("c", ")", "click_add(')')", "butcolor");
+      var btn_div = create_button("div", "/", "click_add('/')", "butcolor");
+      var btn_dot = create_button("dot", ".", "click_add('.')", "butcolor");
+      var btn_mod = create_button("mod", "%", "click_add('%')", "butcolor");
+      var btn_equ = create_button("equal", "=", "equal()");
+      var btn_mul = create_button("mod", "*", "click_add('*')", "butcolor");
+      btn_equ.setAttribute("class", "span2 butcolor");
+
+      div1.append(
+        back,
+        ac,
+        btn1,
+        btn2,
+        btn3,
+        btn_add,
+        btn4,
+        btn5,
+        btn6,
+        btn_sub,
+        btn7,
+        btn8,
+        btn9,
+        btn_div,
+        btn0,
+        btn_dot,
+        btn_mod,
+        btn_mul,
+        btn_o,
+        btn_c,
+        btn_equ
+      );
+       
+    </script>
+  </body>
+</html>

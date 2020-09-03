@@ -1,0 +1,41 @@
+#cal-g {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(7, 100px);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    343deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(72, 231, 24, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.butcolor {
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: rgb(194, 195, 236);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: darkgray;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: flex-end;
+}
