@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <script>
+      var set = document.createElement("select");
+      set.setAttribute("id", "Set_id");
+      set.setAttribute("class", "text");
+      set.setAttribute("onchange", "option()");
+
+      var opt_1 = document.createElement("option");
+      opt_1.innerHTML = "5";
+      var opt_2 = document.createElement("option");
+      opt_2.innerHTML = "10";
+      var opt_3 = document.createElement("option");
+      opt_3.innerHTML = "15";
+      var opt_4 = document.createElement("option");
+      opt_4.innerHTML = "20";
+
+      var def = document.createElement("option");
+      def.innerHTML = "select number of rows";
+
+      set.append(def, opt_1, opt_2, opt_3, opt_4);
+
+      var m = document.createElement("div");
+      m.setAttribute("id", "main_div");
+      m.setAttribute('class',"bag");
+
+      var b = document.createElement("div");
+      b.setAttribute("id", "but_div");
+      b.setAttribute("class", "button");
+
+      var center_div = document.createElement("div");
+      center_div.setAttribute("class", "center");
+
+      center_div.append(set, m, b);
+
+      document.body.append(center_div);
+    </script>
+  </body>
+</html>

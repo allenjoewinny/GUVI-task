@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      let t = {
+        1: "1..",
+        2: "2..",
+        3: "3..",
+        4: "4..",
+        5: "5..",
+        6: "6..",
+        7: "7..",
+        8: "8..",
+        9: "9..",
+        10: "10..",
+      };
+
+      let dod_div = document.createElement("div");
+      dod_div.setAttribute("class", "center");
+
+      let but = document.createElement("input");
+      but.setAttribute("type", "button");
+      but.setAttribute("id", "but_go");
+      but.setAttribute("value", "click");
+      but.setAttribute("class", "s");
+
+      let div_1 = document.createElement("div");
+      div_1.setAttribute("id", "time");
+
+      let div_2 = document.createElement("div");
+      div_2.setAttribute("id", "message");
+
+      dod_div.append(but, div_1, div_2);
+      document.body.append(dod_div);
+
+      var temp = document.getElementById("time");
+      var mess = document.getElementById("message");
+      var count = 10;
+
+      document.getElementById("but_go").addEventListener("click", () => {
+        setTimeout(() => {
+          temp.innerHTML = t[count];
+
+          setTimeout(() => {
+            temp.innerHTML = t[--count];
+            setTimeout(() => {
+              temp.innerHTML = t[--count];
+              setTimeout(() => {
+                temp.innerHTML = t[--count];
+                setTimeout(() => {
+                  temp.innerHTML = t[--count];
+                  setTimeout(() => {
+                    temp.innerHTML = t[--count];
+                    setTimeout(() => {
+                      temp.innerHTML = t[--count];
+                      setTimeout(() => {
+                        temp.innerHTML = t[--count];
+                        setTimeout(() => {
+                          temp.innerHTML = t[--count];
+                          setTimeout(() => {
+                            temp.innerHTML = t[--count];
+                            setTimeout(() => {
+                              temp.innerHTML = "";
+                              message.innerHTML = "Happy Birthday";
+                            }, 1000);
+                          }, 1000);
+                        }, 1000);
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
