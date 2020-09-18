@@ -1,0 +1,21 @@
+.row_1
+{
+    font-size: 5rem;
+    color: blue;
+}
+
+.row_2
+{
+    font-size: 3rem;
+}
+
+.m_d {
+        position: relative;
+        top: 100px;
+      }
+
+body
+      {
+         background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(88,118,170,1) 0%, rgba(58,77,152,1) 0%, rgba(127,173,194,1) 0%, rgba(132,180,197,1) 0%, rgba(203,244,238,1) 41%, rgba(176,241,225,1) 100%); 
+      }

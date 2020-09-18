@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+        .row_1
+    {
+    font-size: 5rem;
+    color: blue;
+    }
+
+   .row_2
+    {
+    font-size: 3rem;
+    }
+    .m_d
+    {
+      position: relative;
+      top: 200px; 
+    }
+    body
+      {
+         background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(88,118,170,1) 0%, rgba(58,77,152,1) 0%, rgba(127,173,194,1) 0%, rgba(132,180,197,1) 0%, rgba(203,244,238,1) 41%, rgba(176,241,225,1) 100%); 
+      }
+    </style>
+  </head>
+  <body>
+      <script>
+          let main_div = document.createElement("div");
+            main_div.setAttribute("class", "container m_d ");
+
+            document.body.append(main_div);
+            
+            let row_1 = document.createElement("div");
+            row_1.setAttribute("class", "row justify-content-center row_1");
+
+            main_div.append(row_1);
+
+            let title = document.createElement("div");
+            title.innerHTML = 'Quick Quiz';
+
+            row_1.append(title);
+
+            let row_2 = document.createElement("div");
+            row_2.setAttribute("class", "row justify-content-center row_2");
+
+            let play = document.createElement("button");
+            play.setAttribute("class", "btn btn-outline-success row_2");
+            play.setAttribute("id", "play");
+            play.innerHTML = "Play";
+            play.setAttribute('onclick', 'game_page()');
+
+           let brk_1 = document.createElement("br");
+           main_div.append(brk_1, row_2);
+
+           row_2.append(play);
+
+           let row_3 = document.createElement("div");
+           row_3.setAttribute("class", "row justify-content-center row_2");
+
+           let High_score = document.createElement("button");
+           High_score.setAttribute("class", "btn btn-outline-danger row_2");
+           High_score.setAttribute("id", "highscore");
+            High_score.innerHTML = "High Scores";
+            High_score.setAttribute('onclick', 'Highscores_page()');
+
+            let brk_2 = document.createElement("br");
+            main_div.append(brk_2, row_3);
+
+            row_3.append(High_score);
+           
+
+           function game_page() {
+                window.location.href = "game.html";
+            }
+
+          function Highscores_page()
+          {
+              window.location.href = 'highscores.html'
+          }
+          
+        
+          
+           
+            let k =sessionStorage.getItem('f_t')
+            if(k == undefined)
+            {
+              let k = {};
+              sessionStorage.setItem('Score_store', JSON.stringify(k));
+              sessionStorage.setItem('f_t', '1');
+            }
+    
+    
+
+      </script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+  </body>
+</html>
