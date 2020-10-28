@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        body
+        {
+           background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(170,173,204,1) 0%, rgba(116,221,241,1) 75%, rgba(231,234,235,1) 98%); 
+        }
+       .c
+       {
+          margin-top: 15%;
+          margin-left: 40%;
+       }
+       
+    </style>
+</head>
+<body >
+    <script src="script.js"></script>
+    <script >
+        let INputClass =  new Pets_availabe();
+        INputClass.setInput('dog nv 2 india');
+        INputClass.setInput('cat nv 2 india');
+       let ENQUERECLASS = new pets_quereies();
+         ENQUERECLASS.store_enquere('dag cat');
+         let flex_div = document.createElement('div');
+         flex_div.setAttribute('class','d-flex align-items-center justify-content-center');
+      let main_div = document.createElement('div');
+  
+        main_div.setAttribute('class','container c');
+
+        let row_1 = document.createElement('div');
+        row_1.setAttribute('class','row');
+
+        let input_pet = document.createElement('input');
+        input_pet.setAttribute('type','text');
+        input_pet.setAttribute('class','cl-8');
+        input_pet.setAttribute("placeholder",'Bread Food Age Origin');
+        input_pet.setAttribute('id','input');
+
+        let add = document.createElement('button');
+        add.setAttribute('class',"btn btn-primary m-2");
+        add.innerHTML ="ADD PET";
+        add.setAttribute('onclick','add_pet_to_calss()');
+
+        function add_pet_to_calss()
+        {
+            let vlu = document.getElementById('input').value;
+            INputClass.setInput(vlu);
+        }
+
+        row_1.append(input_pet,add);
+
+        let row_2 = document.createElement('div');
+        row_2.setAttribute('class','row pt-2');
+
+        let enquere_pet = document.createElement('input');
+        enquere_pet.setAttribute('type','text');
+        enquere_pet.setAttribute('class',' cl-8');
+        enquere_pet.setAttribute('placeholder','Example : dog cat');
+        enquere_pet.setAttribute('id','enquere');
+
+        let add_equere = document.createElement('button');
+        add_equere.setAttribute('class',"btn btn-primary m-2");
+        add_equere.innerHTML ="ADD ENQUERE";
+        add_equere.setAttribute("onclick" ,"add_to_pet_enquere_class()");
+         
+        function add_to_pet_enquere_class()
+        {
+            let vlu = document.getElementById('enquere').value;
+            ENQUERECLASS.store_enquere(vlu);
+        }
+
+
+        row_2.append(enquere_pet,add_equere);
+
+        row_3 = document.createElement('div');
+        
+        let Avalable_pet = document.createElement('button');
+        Avalable_pet.setAttribute('class',"btn btn-primary m-2");
+        Avalable_pet.innerHTML ="AVAILABLE PETS";
+        Avalable_pet.setAttribute('onclick','show_available_pets()');
+
+        function show_available_pets()
+        {
+            document.body.removeChild(main_div);
+
+            let tab = document.createElement('table');
+            tab.setAttribute('id','tab')
+            tab.setAttribute('class','table');
+           
+            let tr_1 = document.createElement('tr');
+            let th_1 =document.createElement('th');
+            th_1.setAttribute('scope','col');
+            th_1.innerHTML = "#";
+
+            let th_2 =document.createElement('th');
+            th_2.setAttribute('scope','col');
+            th_2.innerHTML = "PET";
+
+            let th_3 =document.createElement('th');
+            th_3.setAttribute('scope','col');
+            th_3.innerHTML = "NUMBER";
+
+            tr_1.append(th_1,th_2,th_3)
+
+            tab.append(tr_1);
+
+            let temp = INputClass.each_count();
+            let ky = Object.keys(temp);
+
+            for(let i =0;i<ky.length;i++)
+            {
+            let tr_2 = document.createElement('tr');
+            let td_1 =document.createElement('td');
+            td_1.setAttribute('scope','col');
+            td_1.innerHTML = i+1;
+
+            let td_2 =document.createElement('td');
+            td_2.setAttribute('scope','col');
+            td_2.innerHTML = ky[i];
+
+            let td_3 =document.createElement('td');
+            td_3.setAttribute('scope','col');
+            td_3.innerHTML = temp[ky[i]];
+
+            tr_2.append(td_1,td_2,td_3)
+            tab.append(tr_2);
+            }
+            document.body.append(tab);
+            
+            let retn = document.createElement('button');
+             retn.setAttribute('class',"btn btn-primary");
+             retn.innerHTML = 'Return';
+             retn.setAttribute('onclick','re_store()');
+            tab.append(retn);
+        }
+      function re_store()
+      {
+          document.body.removeChild(document.getElementById('tab'));
+          document.body.append(main_div);
+      }
+        row_3.append(Avalable_pet);
+
+        row_4 = document.createElement('div');
+        
+        let top_5_Enquries = document.createElement('button');
+        top_5_Enquries.setAttribute('class',"btn btn-primary m-2");
+        top_5_Enquries.innerHTML ="Top 5 Enquries";
+        top_5_Enquries.setAttribute('onclick','show_5_enqueries()')
+
+        function show_5_enqueries()
+        {
+             document.body.removeChild(main_div);
+
+            let tab = document.createElement('table');
+            tab.setAttribute('id','tab')
+            tab.setAttribute('class','table');
+           
+            let tr_1 = document.createElement('tr');
+            let th_1 =document.createElement('th');
+            th_1.setAttribute('scope','col');
+            th_1.innerHTML = "#";
+
+            let th_2 =document.createElement('th');
+            th_2.setAttribute('scope','col');
+            th_2.innerHTML = "Enqurie";
+
+            let th_3 =document.createElement('th');
+            th_3.setAttribute('scope','col');
+            th_3.innerHTML = "Available OR NOT";
+
+            tr_1.append(th_1,th_2,th_3)
+
+            tab.append(tr_1);
+
+            let temp = ENQUERECLASS.match_5();
+            let result = temp[0];
+            let inp = temp[1];
+
+            for(let i =0;i<result.length;i++)
+            {
+            let tr_2 = document.createElement('tr');
+            let td_1 =document.createElement('td');
+            td_1.setAttribute('scope','col');
+            td_1.innerHTML = i+1;
+
+            let td_2 =document.createElement('td');
+            td_2.setAttribute('scope','col');
+            td_2.innerHTML = inp[i];
+
+            let td_3 =document.createElement('td');
+            td_3.setAttribute('scope','col');
+            td_3.innerHTML = result[i];
+
+            tr_2.append(td_1,td_2,td_3)
+            tab.append(tr_2);
+            }
+            document.body.append(tab);
+            
+            let retn = document.createElement('button');
+             retn.setAttribute('class',"btn btn-primary");
+             retn.innerHTML = 'Return';
+             retn.setAttribute('onclick','re_store()');
+            tab.append(retn);
+        }
+        
+
+        row_4.append(top_5_Enquries);
+
+        row_5 = document.createElement('div');
+        
+        let ALL_Enquires = document.createElement('button');
+        ALL_Enquires.setAttribute('class',"btn btn-primary m-2");
+        ALL_Enquires.innerHTML ="ALL ENQUIRES";
+        ALL_Enquires.setAttribute('onclick',"show_enqueries()")
+        row_5.append(ALL_Enquires);
+
+         function show_enqueries()
+        {
+             document.body.removeChild(main_div);
+
+            let tab = document.createElement('table');
+            tab.setAttribute('id','tab')
+            tab.setAttribute('class','table');
+           
+            let tr_1 = document.createElement('tr');
+            let th_1 =document.createElement('th');
+            th_1.setAttribute('scope','col');
+            th_1.innerHTML = "#";
+
+            let th_2 =document.createElement('th');
+            th_2.setAttribute('scope','col');
+            th_2.innerHTML = "Enqurie";
+
+            let th_3 =document.createElement('th');
+            th_3.setAttribute('scope','col');
+            th_3.innerHTML = "Available OR NOT";
+
+            tr_1.append(th_1,th_2,th_3)
+
+            tab.append(tr_1);
+
+            let temp = ENQUERECLASS.match_enquere();
+            let result = temp[0];
+            let inp = temp[1];
+
+            for(let i =0;i<result.length;i++)
+            {
+            let tr_2 = document.createElement('tr');
+            let td_1 =document.createElement('td');
+            td_1.setAttribute('scope','col');
+            td_1.innerHTML = i+1;
+
+            let td_2 =document.createElement('td');
+            td_2.setAttribute('scope','col');
+            td_2.innerHTML = inp[i];
+
+            let td_3 =document.createElement('td');
+            td_3.setAttribute('scope','col');
+            td_3.innerHTML = result[i];
+
+            tr_2.append(td_1,td_2,td_3)
+            tab.append(tr_2);
+            }
+            document.body.append(tab);
+            
+            let retn = document.createElement('button');
+             retn.setAttribute('class',"btn btn-primary");
+             retn.innerHTML = 'Return';
+             retn.setAttribute('onclick','re_store()');
+            tab.append(retn);
+        }
+
+
+        main_div.append(row_1,row_2,row_3,row_4,row_5);
+        // flex_div.append(m)
+        document.body.append(main_div);
+
+
+    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
