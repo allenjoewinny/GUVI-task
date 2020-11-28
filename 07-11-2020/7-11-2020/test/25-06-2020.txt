@@ -1,0 +1,143 @@
+Arun Prakash number
+
+9176054456
+
+rohith:
+7000607494
+
+
+****************************************************************
+
+internet protocol :
+
+Http
+https
+tcp/ip
+udp
+
+1. we will get the data and parse
+2. use postman get and post
+3. jsone server-default and rest counties
+4. heroku
+5.AJAX
+
+*****************************************************************
+database important for the furter class:
+
+https://restcountries.eu/rest/v2/all
+
+
+use this html file:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GUVI App</title>
+  </head>
+  <script type="text/javascript">console.log("Welcome to JS basics")</script>
+
+  <body>
+  	first html
+    <div id="root"></div>
+    <script src="./junk.js"></script>
+
+  </body>
+</html>
+***************************************************************
+
+install the json server
+https://www.npmjs.com/package/json-server
+
+install in the cmd
+
+create a dp
+
+example:
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+with name db.json
+
+
+run the command in the cmd :
+
+json-server --watch db.json
+
+you will get:
+
+  Resources
+  http://localhost:3000/posts
+  http://localhost:3000/comments
+  http://localhost:3000/profile
+
+  Home
+  http://localhost:3000
+
+
+run :
+
+ http://localhost:3000/posts
+
+in the browser and you will get in the broswer:
+
+0	
+id	1
+title	"json-server"
+author	"typicode"
+
+********************************************************************
+
+we need to put the id for total elments in the restcountries dp
+
+using the for loop:
+
+do it postman
+
+do post and get in the postman
+
+in the postman past 
+
+http://localhost:3000/posts
+
+************************************************************
+https://stackabuse.com/writing-to-files-in-node-js/
+
+1.add a property to json odject -ssss
+2.Node module usage - fs -> to create the file
+3.POST from the jsonserver - from postman
+************************************************************
+heroku :
+
+create the heroku account 
+
+https://github.com/reach2arunprakash/json-server-heroku
+
+do the steps in the readme file
+
+***********************************************************
+red the basic html ppt
+
+task :
+
+crete the resume in html
+***************************************************************
+task for today
+
+1.JSON postman -adding ID - file write
+2.Heroku
+3.Simple page Resume
+
+why header tag in html 5?
+diff between  div and section
+purpose of new tage in HTML 5 atribute
+
+******************************************************************
+
+

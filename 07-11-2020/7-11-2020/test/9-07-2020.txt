@@ -1,0 +1,196 @@
+8. Find the name with max characters and return the name.
+
+const friends = [
+"Mari",
+"MaryJane",
+"CaptianAmerica",
+"Munnabai",
+"Jeff",
+"AAK chandran"
+];
+
+function print(n)
+{
+    var max;
+    max =0;
+    var j;
+    for(var i=0;i<n.length;i++)
+    {
+        if(n[i].length>max)
+        {
+            max = n[i].length;
+            j = i;
+        }
+    }
+    console.log(n[j]);
+}
+
+print(friends);
+**************************************************************
+multidimentional array
+
+javascript does not provide multidimential array concept
+natively but ratheir we can define a array whith elements 
+which is also another array.
+
+let activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7]
+];
+
+to show the activitey arrry in the console we can use
+
+console.table(activities);
+
+1. push()
+
+to add new element to the end of the multidimentional
+array 
+
+example :
+
+activities.push(['study',2]);
+
+2.splice()
+
+to add or remove  the element in between the array
+
+example:
+
+to insert to the 2nd position of the activites array
+
+activities.splice(1,0,['progrmming',2]);
+                  | |
+   index to insert< > here 0 to add new element 
+
+activities.splice(1,1,['progrmming',2]);      
+ 
+to replace the first index element with ['progrmming',2]
+
+activities.splice(1,1);             
+
+to remove the first index element.
+
+3. pop()
+
+to remove the element from the end of array
+
+ex:
+activities.pop();
+
+************************************************************
+ In String, remove vowels
+
+ function vowels(n)
+{
+    var result = "";
+    var v = "aeiouAEIOU";
+    var k=0;
+    for(var i=0;i<n.length;i++)
+    {
+        for(var j=0;j<v.length;j++)
+        {
+         if(n[i] ===v[j])
+        {
+          ++k;
+        }
+        }
+    if(k===0)
+    {
+        result = result+ n[i] ;
+         
+        
+    }
+    else
+    {
+        --k;
+    }
+    }
+    console.log(k);
+    console.log(result);
+}
+ var a ="akfniueghiewnjefeo" ;
+ vowels(a);
+
+***********************************************************
+insertion sort:
+
+for(i=1;i<n;i++)
+{
+
+var key = a[i];
+
+var j=i-1;
+
+while((j>=0)&&(a[j]>key)
+{
+a[j+1]=a[j];
+j=j-1;
+}
+
+a[j+1]=key;
+
+Sort the array elements in descending order based on the number of 1’s in its binary representation.
+
+for this have two array 1.for the bit count
+
+2. for the original array
+
+using insetion sort sort the 1st arry along with the 2nd
+
+***************************************************************
+
+// frequensy sort
+
+var obj ={};
+
+
+var x = userInput[0];
+
+for(var i=0;i<x.length;i++)
+{
+    if(obj[x[i]] === undefined)
+    {
+        obj[x[i]] = 1;
+       
+    }
+    else
+    {
+        obj[x[i]]++;
+    }
+    
+}
+
+var arr= [];
+for( var key in obj)
+{
+    arr.push([key,obj[key]]);
+}
+
+console.log(arr);
+
+arr.sort(function(a,b){ return b[1]-a[1]});
+
+for(var j=0;j<arr.length;j++)
+{
+    for(var k=0;k<arr[j][1];k++)
+    {
+        console.log(arr[j][0]);
+    }
+}
+
+
+Output:
+[ [ 'a', 2 ], [ 'd', 4 ], [ 'g', 1 ], [ 'e', 1 ] ]
+d
+d
+d
+d
+a
+a
+g
+e
+*********************************************************

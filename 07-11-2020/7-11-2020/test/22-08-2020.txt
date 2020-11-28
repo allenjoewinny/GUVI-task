@@ -1,0 +1,234 @@
+in HTML
+
+class inherite
+
+<style>
+ .myclass{
+colour: crimson;
+
+fornt-family:monospace;
+
+forn-size:28px;
+}
+
+p
+{
+color:darkblue;
+}
+
+.myclass,span // here the front -family :cursive is applied to .myclass and p
+p{
+font-family: cursive;
+}
+
+<style>
+
+****************************************************************
+
+similar to the codekata 
+
+their is webKata:
+
+try this:
+
+https://www.guvi.in/webkata
+
+venkate github:
+https://github.com/rvsp/HTML-CSS
+
+**************************************************************
+over flow  and scroll;
+
+.scroll
+{
+
+overflow-y:scroll;
+overflow-x:hidden;
+height:180px;
+width:15px;
+
+}
+
+.hidden
+{
+overflow:hidden;
+height:180px;
+width:15px;
+
+}
+
+.visible
+{
+overflow:visible;
+height:180px;
+width:15px;
+
+}
+
+.auto
+{
+overflow:auto;
+height:180px;
+width:15px;
+
+}
+
+
+<body>
+
+<div class = "hidden">
+
+dsnvod dnvinpeiwjkkwd ppwjcnvh jwjopdjpwjd popj9ejdopmf
+fopejfpefoe enionei e oefiondeo voee j oebfeofe 
+</div>
+
+<div class = "scroll">
+
+dsnvod dnvinpeiwjkkwd ppwjcnvh jwjopdjpwjd popj9ejdopmf
+fopejfpefoe enionei e oefiondeo voee j oebfeofe 
+</div>
+
+<div class = "visible">
+
+dsnvod dnvinpeiwjkkwd ppwjcnvh jwjopdjpwjd popj9ejdopmf
+fopejfpefoe enionei e oefiondeo voee j oebfeofe 
+</div>
+
+<div class = "auto">
+
+dsnvod dnvinpeiwjkkwd ppwjcnvh jwjopdjpwjd popj9ejdopmf
+fopejfpefoe enionei e oefiondeo voee j oebfeofe 
+</div>
+
+</body>
+
+**********************************************************
+
+auto  horizontal  scroll:
+
+.auto{
+ overfow x:auto;
+ white-space:no-wrape;
+ width:250px;
+}
+**********************************************************
+
+box shadow:
+
+.box
+{
+box-shadow: red 5px,5px,5px,5px; // the values are taken as top right buttom left ie clockwise direction
+
+}
+
+***************************************************************
+clip will work oly with absolute
+
+
+.clip{
+
+position:absolute;
+clip:rect(10px,100px,50px,10px)
+
+}
+
+is used to crop the content.
+
+**********************************************************
+
+2 unit types
+Absolute
+cm & mm
+in - 1 in = 96 px = (2 to 3cm)
+px - 1px = 1/96th of 1 in
+pt - 1pt = 1/72 of 1in
+Relative
+em - 16px * 2 = 32px
+rem - relative to font-size of root
+vh - 1% of height of viewport
+vw - 1% of width of viewport
+vmin - 1% of viewport smaller dimension
+vmax - 1% of viewport larger dimension
+% - relative to parent element
+*********************************************************
+
+fonts: 
+
+use:
+
+fonts.google.com
+
+link :
+
+shoud be inside the <head>
+
+import:
+
+should be inside the <style>
+
+*************************************************************
+
+for icons use font awesome:
+
+and  cnd
+******************************************************
+media:
+
+@media(min-width:200px)amd(max-width:600px)
+{
+
+.myclass{
+backgroud-color:red;
+}
+
+.font{
+font-family:cursive;
+}
+
+******************************************************
+
+https://flexboxfroggy.com/
+
+https://flukeout.github.io/
+
+https://mastery.games/
+
+https://cssgridgarden.com/
+
+https://learncssgrid.com/
+************************************************************
+
+* is used to give the properties in all the selectors
+
+*{
+border-size :
+
+
+
+******************************************************
+parent inherit
+overflow
+drop box
+clip
+measurements
+fonts
+icons
+media query - rows & cols
+meta
+
+*********************************************************
+task of the day:
+
+https://gist.github.com/rvsp/ef5fdce46bfbf587df3562c7797f16e4
+
+***************************************************************************
+https://github.com/rvsp/HTML-CSS
+**********************************************************
+
+for banner:
+
+use gride flex rows and columns
+
+**************************************************************
+
+

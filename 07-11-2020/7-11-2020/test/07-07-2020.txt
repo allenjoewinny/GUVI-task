@@ -1,0 +1,99 @@
+Math object
+
+all properties of the math can be called using the math 
+as an object.
+
+ex:
+
+var x = Math.PI;
+var y = Math.sqrt(16); // returns the square root of 16
+
+sqrt1_2  // it return the square root of 1/2
+
+*********************************************************
+object
+
+example for an object
+
+var car ={
+type:"Fiat",mode"500",year:"2020",weight:"1800"
+};
+
+*********************************************************
+array we can store multiple data type
+
+example:
+
+var car =[ 'hellow','s',123.4.5]
+
+and we can access the element of the array as car[3]
+we can perforn=m the puc operation like
+car.push("allen");
+*********************************************************
+functio another method (using the variable)
+
+var myvar = function()
+{
+console.log("hellow");
+}
+
+console.log(myvar);
+*************************************************************
+indefOf()
+
+function retuns the index (or the position)of  the specified
+charester inside the the () in the object which it is searching
+
+it returns -1 if it does not found the charecter
+
+exanple
+
+car.indexOf(a);
+
+if a is found in the object car it returns the position of a
+rlse it returns -1 
+
+example:
+function count(n)
+{
+var vowels = 'aeiouAEIOU';
+  var c = 0;
+  for( var i =0;i<n.length;i++)
+  {
+    if((vowels.indexOf(n[i]))!==-1)
+    {
+      c++;
+    }
+  }
+  console.log(c);
+
+}
+
+
+var x = userInput[0];
+
+count(x);
+******************************************************************
+
+strict comparitor (===) is only true if bot the operand of the 
+same type and their content matches
+
+****************************************************************
+to add an extra element to the object we can use
+
+car.milage = "28";
+
+or
+
+car["milage"] = "28";
+*******************************************************************
+anonymous function
+
+(function(x){ return x*2;})(2);
+
+*********************************************************************
+
+typeof
+
+typeof returns the type of the element
+*****************************************************************

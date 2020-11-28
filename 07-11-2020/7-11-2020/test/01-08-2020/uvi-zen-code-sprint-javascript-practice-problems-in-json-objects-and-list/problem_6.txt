@@ -1,0 +1,37 @@
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var array = [[['firstName', 'Vasanth'], ['lastName', 'Raja'], ['age', 24], ['role', 'JSWizard']], [['firstName', 'Sri'], ['lastName', 'Devi'], ['age', 28], ['role', 'Coder']]];
+
+function transformGeekData(a)
+{
+    var obj = {};
+    
+    var k=0;
+    
+    for(i=0;i<a.length;)
+    {
+        if(obj[a[i][0]])
+        {
+            k++;
+        }
+        obj[[k][a[i][0]]]=a[i][1];
+    }
+    console.log(obj);
+}
+transformGeekData(array);
+
+//end-here
+});
+
+

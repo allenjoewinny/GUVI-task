@@ -1,0 +1,3 @@
+calculate the bmi
+
+and fix the bim as 18 kg/m.

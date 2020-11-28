@@ -1,0 +1,240 @@
+https://www.guvi.in/ide
+https://docs.google.com/document/d/14J5-zcQjXSNunyUqrXZz50skGX_XxB3IE0b_ilK-Pw4/edit
+
+************************************************************
+whe we are giving the input it considers as the string
+
+so for getting the integer input
+
+use parseInt()
+
+example :
+
+var num = (userInput[0]);
+
+var num1= (userInput[1]);
+
+var total = num + num1;
+
+console.log(total);
+____________________________________
+var num = parseInt(userInput[0]);
+
+var num1= parseInt(userInput[1]);
+
+var total = num + num1;
+
+console.log(total);
+
+
+********************************************************
+
+split 
+
+it is used to give the space between the input values
+
+example :
+//to get the input split it and add
+
+var num = userInput[0].split(" ");
+
+console.log(num);
+
+console.log(parseInt(num[0])+parseInt(num[1])+parseInt(num[2]));
+********************************************************
+
+shortcut for the parseInt is
+
+we can (add) + operater insteard of paresInt
+*******************************************************
+
+/* to get the value of 9 for the input
+
+1 1 1
+1 1 1
+1 1 1
+*/
+// console.log(userInput);
+
+// var num1 = userInput[0].split(" ");
+// var num2 = userInput[1].split(" ");
+// var num3 = userInput[2].split(" ");
+
+// var total1 = parseInt(num1[0])+parseInt(num1[1])+parseInt(num1[2]);
+// var total2 = parseInt(num2[0])+parseInt(num2[1])+parseInt(num2[2]);
+// var total3 = parseInt(num3[0])+parseInt(num3[1])+parseInt(num3[2]);
+******************************************************
+finish all the absalute beggener problem in code katta
+
+**************************************************
+// looping for loop 
+
+var total=0;
+for(var i=0;i<userInput.length;i++)
+{
+    var dummy = userInput[i].split(" ");
+    console.log(dummy);
+    
+    for(var j=0;j<3;j++)
+    {
+        total= total + (+dummy[j]);
+          console.log(total);
+    }
+  
+}
+
+[ '1', '1', '1' ]
+1
+2
+3
+[ '1', '1', '1' ]
+4
+5
+6
+[ '1', '1', '1' ]
+7
+8
+9
+Execution Time:
+0.077s
+Memory Used:
+8368kb
+*********************************************************
+ide notes
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+
+// console.log(userInput);
+
+// console.log(userInput[0]);
+
+// console.log(userInput[1]);
+
+// string concatination 
+// var Name =userInput[0];
+
+// Name = Name + ' Guvi';
+// console.log(Name);
+
+//concatination of integers
+
+// var num = parseInt(userInput[0]);
+
+// var num1= parseInt(userInput[1]);
+
+// var total = num + num1;
+
+// console.log(total);
+
+//to get the input split it and add
+
+// var num = userInput[0].split(" ");
+
+// console.log(num);
+
+// console.log(parseInt(num[0])+parseInt(num[1])+parseInt(num[2]));
+
+
+/* to get the value of 9 for the input
+
+1 1 1
+1 1 1
+1 1 1
+*/
+// console.log(userInput);
+
+// var num1 = userInput[0].split(" ");
+// var num2 = userInput[1].split(" ");
+// var num3 = userInput[2].split(" ");
+
+// var total1 = parseInt(num1[0])+parseInt(num1[1])+parseInt(num1[2]);
+// var total2 = parseInt(num2[0])+parseInt(num2[1])+parseInt(num2[2]);
+// var total3 = parseInt(num3[0])+parseInt(num3[1])+parseInt(num3[2]);
+
+// var total = total1 + total2 + total3;
+
+// console.log(total);
+
+// looping for loop 
+var total=0;
+for(var i=0;i<userInput.length;i++)
+{
+    var dummy = userInput[i].split(" ");
+    console.log(dummy);
+    
+    for(var j=0;j<3;j++)
+    {
+        total= total + (+dummy[j]);
+          console.log(total);
+    }
+  
+}
+
+
+
+
+//end-here
+});
+****************************************************
+
+program to find the max of three numbers
+
+function max_of_three(a,b,c)
+{
+    var max=0;
+    if(a>=b)
+    {
+        max=a;
+    }
+    else
+    {
+        max=b;
+    }
+    if(c>max)
+    {
+        max=c;
+    }
+    return max;
+}
+
+var x = parseInt(userInput[0]);
+var y = parseInt(userInput[1]);
+var z = parseInt(userInput[2]);
+
+console.log(max_of_three(x,y,z));
+
+******************************************************
+You are given with a number "N", find its cube.
+
+function cube(x)
+{
+    var result = x*x*x;
+    return result;
+}
+var a = parseInt(userInput[0]);
+console.log(cube(a));
+*********************************************************
+method to retun two variables at the same time:
+
+ var obj=
+    {
+        m : meters,
+        c : centi_meters
+    };
+*********************************************************
+keyword to round of the decimal values:
+
+toFixed();
+
+inside the brackets specify the number of places to round off
+*************************************************************

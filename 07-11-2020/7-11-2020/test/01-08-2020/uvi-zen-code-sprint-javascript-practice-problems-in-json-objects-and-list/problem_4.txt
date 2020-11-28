@@ -1,0 +1,28 @@
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var a = ['GUVI', 'I', 'am', 'geek'];
+
+function transformFirstAndLast(arr) 
+{
+   var object = {};
+   object[arr[0]] = arr[(arr.length)-1];
+   console.log(object);
+}
+
+transformFirstAndLast(a) ;
+
+//end-here
+});
+
+

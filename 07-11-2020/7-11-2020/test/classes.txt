@@ -1,0 +1,213 @@
+class i used to create an object:
+
+instance propertie : what they have
+
+-name 
+-age
+-height
+
+instance Method _What they do
+
+-talk
+-run
+-jump
+
+ class Rectangle{
+
+}
+
+ever class has a constructor a constructor is bacisally
+is a method which is runned only ones during the life of objectio
+
+this constructor is runned when the object is created.
+
+construtor is used to set up the object:
+
+constructor(){
+
+}
+
+constructor is used to set up the object:
+
+class Rectangle{
+//setup
+constructor ()
+{
+console.log("the Rectangle is being Created");
+}
+}
+
+let myRectangle1 = new Rectangle();
+
+//new is used to create an object based on the class
+
+
+**************************************************************
+this -> referse to the current property or the current object
+
+class Rectangle{
+//setup
+constructor ()
+{
+console.log("the Rectangle is being Created");
+
+this.width =5;       |
+this.height =3;      |-> this are the poperties of the rectangle
+this.colour ="blue"; |
+
+}
+}
+
+*******************************************************************
+if we need a custom rectangle the :
+
+constructor accepts the argument and the we can use it to define our one 
+rectangle:
+
+class Rectangle{
+//setup
+constructor (_width,_height,_colour)
+{
+console.log("the Rectangle is being Created");
+
+this.width = _width;       
+this.height =_height;      
+this.colour =_colour; 
+
+}
+}
+
+let my_rectangle = new rectanglr(5,3,"blue");
+
+**********************************************************************
+method :
+
+to get the area
+
+class Rectangle{
+//setup
+constructor (_width,_height,_colour)
+{
+console.log("the Rectangle is being Created");
+
+this.width = _width;       
+this.height =_height;      
+this.colour =_colour; 
+
+}
+
+get_area(){
+
+return this.with*this.height;
+}
+}
+
+let my_rectangle = new rectanglr(5,3,"blue");
+
+*************************************************************
+Getters and setters:
+
+method of the class
+
+getter behaves like it is like the property of the class
+
+class squar
+{
+    constructor(_width)
+    {
+        this.width =_width;
+        this.height =_width;
+    }
+
+    get area()
+    {
+        return this.width * this.height;
+    }
+}
+
+let s = new squar(3);
+console.log(s.area);
+
+setter is used to set the value of the instance in the class:
+
+// getter:
+
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//     }
+
+//     get area()
+//     {
+//         return this.width * this.height;
+//     }
+// }
+
+// let s = new squar(3);
+// console.log(s.area);
+
+
+// setter
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//     }
+
+//     set  par(sq)
+//     {
+//         this.width = Math.sqrt(sq);
+//         this.height = this.width;
+//     }
+// }
+
+// let s = new squar;
+// s.par  = 25;
+// console.log(s.width,s.height);
+
+//for the clarity of the getter
+//here the count will have the track of how 
+//many times the area is called 
+//we can access the count like a class instance.
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//         this.count =0;
+//     }
+
+//     get area()
+//     {
+//         this.count++;
+//         return this.width * this.height;
+        
+//     }
+// }
+
+// let s = new squar(3);
+// console.log(s.area);
+// console.log(s.area);
+// console.log(s.area);
+// console.log(s.area);
+// console.log(s.count);
+
+**************************************************************
+static methods:
+
+helper method /utilities:
+
+
+
+
+
+
+
+
+

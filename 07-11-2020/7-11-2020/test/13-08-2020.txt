@@ -1,0 +1,468 @@
+in object orented programing we combine the 
+group of functions into a unit called as object
+
+an object has a property and methods
+
+what is the reason for writing a code in object
+orented way ?
+
+hint (function)
+
+because when we write a code in object orented way
+the function's argument gets lower and lower
+
+ex:
+
+let basescalry = 3000;
+let overtime =10;
+let rate =20;
+
+function getWage(basesalary,overtime,rate){
+return basescalary +(ovaertime*rate);
+}
+
+let employee ={
+    baseSalary:30000,
+    overtime:10,
+    rate:20,
+    getWage:function(){
+        retrn this.basesalary +(this.overtime*this.rate)
+    }
+}
+
+//and this is encapsulation
+
+// constructor function
+
+the function name should be start with capital letter
+
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+
+    }
+}
+
+ if we want to have a multiple versions of the 
+same object we can use classes
+
+class is a sugar cotting 
+
+//to get the area
+
+// class Rectangle {
+//     //setup
+//     constructor(_width, _height, _colour) {
+//         console.log("the Rectangle is being Created");
+
+//         this.width = _width;
+//         this.height = _height;
+//         this.colour = _colour;
+
+//     }
+
+//     get_area() {
+
+//         return (this.width * this.height);
+//     }
+
+//     rectangle_description()
+//     {
+//         console.log(`This is the rectangle of area ${this.width*this.height} and with an colour ${this.colour}`);
+//     }
+// }
+
+// let my_rectangle = new Rectangle(5, 3, "blue");
+// console.log(my_rectangle.get_area());
+// my_rectangle.rectangle_description();// just call the method in class and get the result
+
+
+
+class operation:
+
+new is used to create a empty object  {}
+this is used to assign a value to that object {1,2}
+
+for an object we will have the prototype methods
+to use for that objets
+
+in the class the method which we are defining
+are converted as the class prototype methods
+
+for example we can see in the browser:
+
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+
+    }
+}
+
+here the draw is a method of the class object
+not the prototype method of the class
+
+function Circle(radius){
+    this.radius = radius;
+}
+
+Circle.prototype.draw = function(){
+        console.log('draw');
+}
+
+here the draw becomes the prototype of the 
+class 
+
+class constructor:
+
+-> it is the fundamental part of most of the class
+->which sets up the each instance initial state
+->handles the parameters that were passed when calling new
+
+example:
+
+class MyClass
+ {    constructor(option){    
+         console.log(`Creating instance using ${option} option.`);
+         this.option= option;
+         }
+}
+
+class inheritance:
+
+methods and properties which are defined in the 
+superclass can be accessed in the extended classes
+
+-> if the child class decleares its own counstructor 
+the it must invoke the parent class constructor via super()
+before it can access this
+
+// class person {
+//     constructor(_name, _age) {
+//         this.name = _name;
+//         this.age = _age;
+//     }
+
+//     dis() {
+//         console.log(`this is ${this.name} and i am ${this.age} old`)
+//     }
+// }
+
+// class progammer extends person {
+//     constructor(_name, _age, _yearsofexperence) {
+//         super(_name, _age);
+//         this.years_of_experence = _yearsofexperence;
+//     }
+//         code()
+//         {
+//             console.log(`this is ${this.name} and i am ${this.age} old and my experence is ${this.years_of_experence}`);
+//         }
+    
+// }
+
+// let s = new person('alies', 30);
+// let y = new progammer('bob', 24, 4);
+
+// console.log(s, y);
+
+// y.code();
+// y.dis(); // this accessing the parent class method
+
+// const prog = [
+//     new progammer('jef',23,2),
+//     new progammer('jon',40,20)
+// ];
+
+// for(progammer of prog)
+// {
+//     progammer.code();
+// }
+
+
+static Methods:
+
+->static method and property are defined in class
+or constuctor itself ,not on the instance object
+
+-> we can not access the static method using the
+instance created from the object
+
+->they are specified in the class definetion using the 
+static keyword
+
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//         this.count =0;
+//     }
+
+//     static a(w,h)
+//     {
+//         // try giving this
+//         return w ===h;
+//     }
+// }
+
+// let s= new squar;
+
+// console.log(squar.a(2,3));
+
+// console.log(s.a(2,3));//will through an error
+// here we can not give like console.log(s.a(2,3))
+// as we can not access the a functon in the class
+
+Getters and Setters:
+
+-> in class getter is written as an non argument 
+method which is prefixed with get Keyword
+
+-> setter is similar to the getter but it accepts
+one argument and which is is prefixed with the set Keyword.
+
+//to get the area
+
+// class Rectangle {
+//     //setup
+//     constructor(_width, _height, _colour) {
+//         console.log("the Rectangle is being Created");
+
+//         this.width = _width;
+//         this.height = _height;
+//         this.colour = _colour;
+
+//     }
+
+//     get_area() {
+
+//         return (this.width * this.height);
+//     }
+
+//     rectangle_description()
+//     {
+//         console.log(`This is the rectangle of area ${this.width*this.height} and with an colour ${this.colour}`);
+//     }
+// }
+
+// let my_rectangle = new Rectangle(5, 3, "blue");
+// console.log(my_rectangle.get_area());
+// my_rectangle.rectangle_description();// just call the method in class and get the result
+
+
+// getter:
+
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//     }
+
+//     get area()
+//     {
+//         return this.width * this.height;
+//     }
+// }
+
+// let s = new squar(3);
+// console.log(s.area);
+
+
+// setter
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//     }
+
+//     set  par(sq)
+//     {
+//         this.width = Math.sqrt(sq);
+//         this.height = this.width;
+//     }
+// }
+
+// let s = new squar;
+// s.par  = 25;
+// console.log(s.width,s.height);
+
+//for the clarity of the getter
+//here the count will have the track of how 
+//many times the area is called 
+//we can access the count like a class instance.
+// class squar
+// {
+//     constructor(_width)
+//     {
+//         this.width =_width;
+//         this.height =_width;
+//         this.count =0;
+//     }
+
+//     get area()
+//     {
+//         this.count++;
+//         return this.width * this.height;
+
+//     }
+// }
+
+// let s = new squar(3);
+// console.log(s.area);
+// console.log(s.area);
+// console.log(s.area);
+// console.log(s.area);
+// console.log(s.count);
+
+
+another example where the getter and the setter will
+have the same name
+
+class MyClass
+ {  
+      constructor()
+      {
+          this.names_=[];
+      }
+      
+      set name(value)
+          {
+              this.names_.push(value);
+              
+          }
+     get name()
+         {
+             returnthis.names_[this.names_.length-1];
+         }
+}
+
+const myClassInstance =new MyClass();
+myClassInstance.name='Joe';
+myClassInstance.name='Bob';
+console.log(myClassInstance.name);
+console.log(myClassInstance.names_);
+
+Private Members:
+
+// thougth private concept is avoided in javascript
+
+-> we can create an private function using the Var Keyword
+
+function Employee(FirstName, LastName) {
+    // public field
+    this.first_name = FirstName;
+    this.last_name = LastName;
+
+    // Private field
+
+    var privateFullName;
+
+    // private function
+
+    var pr = function () {
+        privateFullName = (this.first_name + " " +this.last_name);
+        return privateFullName;
+    };
+
+    // privileged function
+    this.privilegedGetFullName = function () {
+        return pr();
+    }
+
+    //public method 
+    Employee.prototype.publicGetFullNmae = function () {
+        return this.privilegedGetFullName();
+    }
+
+}
+
+var emp = new Employee('allen', 'joe');
+
+// console.log(emp.privilegedGetFullName);
+console.log(emp.publicGetFullNmae());
+ 
+-> prevelaged methods are created using the this keyword
+->prevelaged methods  can access private methods and variables
+
+
+->public method are created using the prototype keyword
+->public methods can call the prevelaged methods but not the 
+private methods
+
+-> like the public methods the prevelaged methods are also availabe
+outside the constructor function
+
+polymorphism in javascript :
+
+one type of object can behave differently based on the 
+runtime scenario:
+
+->polymorphism uses the concept of inheritance to
+to achive this
+
+->multiple objects will have the same method but different
+implementation
+
+->depeding on the preference corresponding object
+is selected and the sutable method is executed
+
+                           vehicle
+                    
+                car                    Truck
+
+is the act of redefining a method in child which is present in parent
+
+->consdering a scenario in which the vehicle class
+has the method sound 
+
+-> class car and class Trucks are being inhereted from the 
+base class vehicle
+
+-> the class car has his own method sound
+->but the class Truck does-not
+
+=> in this type
+
+class vehicle
+{
+    sound()
+    {
+        console.log('tug tug tug');
+    }
+}
+
+class car extends vehicle
+{
+    sound()
+    {
+        console.log('tok tok tok');
+    }
+}
+
+class truck extends vehicle
+{
+
+}
+
+let a = new vehicle;
+let b = new car;
+let c = new truck;
+
+a.sound();
+b.sound();
+c.sound();
+
+-> here the sound of the truck is sound of the 
+vechicle
+
+-> but the sound of the car is modified as required
+
+
+
+

@@ -1,0 +1,32 @@
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var obj = {name: 'ISRO', age: 35, role: 'Scientist'};
+
+function convertObjectToList(o)
+{
+    var result = Object.entries(o);
+    var r=[];
+    for(var i=0;i<result.length;i++)
+    {
+        r[i]= result[i];
+    }
+    
+        console.log(r);
+}
+
+convertObjectToList(obj);
+//end-here
+});
+
+

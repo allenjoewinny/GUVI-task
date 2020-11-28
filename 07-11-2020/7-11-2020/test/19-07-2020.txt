@@ -1,0 +1,124 @@
+strcture of the web browser:
+
+short cut for inspect element (ctrl + shift +I) for chrome
+(for the inspector)
+
+rendering engine of the mozirila is gecko
+
+brave (try it)
+**********************************************************
+
+important:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+*****************************************************
+programming paradigm:
+
+https://cs.lmu.edu/~ray/notes/paradigms/#:~:text=A%20programming%20paradigm%20is%20a,thing%20(like%20a%20language).
+
+it is very dynamic in nature and supports various types of programming styles, such as object-oriented, imperative, and functional programming.
+
+Imperative: Programming with an explicit sequence of commands that update state.
+Declarative: Programming by specifying the result you want, not how to get it.
+Structured: Programming with clean, goto-free, nested control structures.
+Procedural: Imperative programming with procedure calls.
+Functional (Applicative): Programming with function calls that avoid any global state.
+Function-Level (Combinator): Programming with no variables at all.
+Object-Oriented: Programming by defining objects that send messages to each other. Objects have their own internal (encapsulated) state and public interfaces. Object orientation can be:
+Class-based: Objects get state and behavior based on membership in a class.
+Prototype-based: Objects get behavior from a prototype object.
+Event-Driven:
+
+
+******************************************************
+javascript is multi paradigm language
+
+********************************************************
+
+
+Networking protocol:
+
+
+tcp (is like the register post)  waits till the packet 
+                                 is received
+
+udp (is like normal post) just througs and goes
+
+
+example
+
+10000000000000000(money in the bank) - TCP/IP
+
+music/vedio - UDP/IP
+
+resoure for the network protocol:
+
+https://www.youtube.com/watch?v=yF_txERujps&list=PL72F544C53B5FA38A
+
+https://www.youtube.com/watch?v=PN7aO81pktU&list=PLCFFC30061548F497
+
+*************************************************************
+
+MAC and IP address
+
+mac is like imei num for phone
+
+and phone number is like ip
+
+ip are used for the routing
+
+upgrades of the hardware is done with having same ip 
+adderss
+
+***************************************************
+port - USB/C-type
+
+http->tcp->ip->port->reach you
+
+**********************************************************
+home work:
+
+difference between http/1.1 and http/1.2
+
+get vs post
+
+*****************************************************
+http Return codes:
+
+1XX hold on
+2XXhere you go
+3XX go away
+4XX you screwed up
+5XX i screwed up
+*******************************************************
+try the posman:
+
+https://www.postman.com/
+
+https://www.youtube.com/watch?v=eYQyqf-DtCQ
+
+https://www.youtube.com/watch?v=UObINRj2EGY
+
+https://www.toolsqa.com/postman/post-request-in-postman/
+*********************************************************
+
+in the reachtoarunprakash javascript101 ppt
+*****************************************************
+create the repositerie in git hub
+
+upload the task
+
+task for the today is
+1.difference between http1.1 and http2
+2.get vs post
+3.postman
+*****************************************************
+
+
+
+
+
+
+
+

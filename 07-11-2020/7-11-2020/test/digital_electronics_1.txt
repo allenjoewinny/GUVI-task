@@ -1,0 +1,52 @@
+duality theorem
+
+dual of an boolean function s optaiend by interchanging the 
+AND with OR and zero with one
+
+**********************************************************
+Demorgans theorem
+used to find the complement of bulean function.
+
+(x+y)'=x'.y'
+
+**********************************************************
+
+special gates 
+
+Ex-OR and Ex_NOR 
+
+Ex-OR odd function of 1
+
+Ex-NOR even function of 1
+
+***************************************************************
+
+NAND SOP
+
+NOR POS
+**********************************************************
+degenerative form :
+
+we can reduce the number of logic gates
+
+non degenerative form :
+
+we can not reduce the number of logic gates further
+*************************************************************
+combinational circuits
+
+output of the combinational circuit depend on the 
+combination of the present input
+
+**********************************************************
+Parity
+
+even parity 
+
+if even number of ones present in the input
+p is zero
+
+if odd number of ones present in the input p is 1
+
+n77a4q
+*********************************************************

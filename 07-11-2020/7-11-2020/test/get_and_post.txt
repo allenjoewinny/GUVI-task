@@ -1,0 +1,45 @@
+Both the get and post method used to transfer data from client to
+server in http
+
+GET:
+
+get is used to request data from specified resource
+
+query string is send in the url of a get request
+
+get request can be:
+
+1. chached
+2. remains in browser history
+3. bookmarked
+4. shoud not be used when dealing wih the sensitive data
+5. restricted length of the request.
+6. only used to request data (not modify)
+7. has restricted data type(that is only ASCII characters allowed)
+
+example:
+
+/test/demo_form.php?name1=value1&name2=value2
+
+***********************************************************************
+
+POST:
+
+post is used to send the data to the server to crate or update a resource
+
+data sent to the sever with post is stored in the request body of the http request
+
+post request :
+
+1. never chached
+2. do not remains in bowser history
+3. they can not be bookmarked
+4. there is no restrictions on data length.
+
+example:
+
+POST /test/demo_form.php HTTP/1.1
+Host: allen.com
+name1=value1&name2=value2
+
+******************************************************************

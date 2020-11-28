@@ -1,0 +1,295 @@
+to concat two arrays 
+
+we can use concat key word
+
+var x = [1,2,3,4]
+
+var y = [6,7,8,9]
+
+var z = x.concat(y);
+
+*************************************************************
+for the window problem in arrays use the for loop tempelate
+
+Find the first 0 in window of size k. You  are given n numbers and window size ‘w’
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var x= userInput[0].split(" ");
+var y = userInput[1].split(" ");
+
+var result ="";
+
+for(var i=0;i<(x[0]-x[1]+1);i++)
+{
+    var flag =0;
+   
+    for(var j=0;j<x[1];j++)
+    {
+         
+       if(parseInt(y[i+j]) === 0) 
+       {
+           result = result + (i+j+1) + " ";
+           
+           flag = 1;
+           break;
+       }
+    }
+    if(!flag)
+    {
+        result = result + "-1" +" ";
+    }
+}
+
+console.log(result.trim());
+
+  //end-here
+});
+*************************************************************
+Math.abs()
+
+Math.abs(y[i+j])
+
+will return the value whis is positive in sign irrespective 
+of the sign of the y[i+j]
+************************************************************
+input:
+5
+1 1 2 3 3 
+
+Output:
+2 1 3
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+var x = parseInt(userInput[0]);
+var y = userInput[1].split(" ");
+var z= {};
+var arr =[] ;
+var acc =[];
+
+for(var i=0;i<x;i++)
+{
+    if(z[y[i]]===undefined)
+    {
+        z[y[i]]=1;
+    }
+    else
+    {
+        z[y[i]]++;
+    }
+}
+
+for(var key in z)
+{
+    arr.push(key);
+    acc.push(z[key]);
+}
+
+for(var k=1;k<arr.length;k++)
+{
+    key1 = arr[k];
+    key2 = acc[k];
+    var j=k-1;
+    
+    while(j>=0 && acc[j]>key2)
+    {
+        arr[j+1] = arr[j];
+        acc[j+1] = acc[j];
+        j =j-1;
+    }
+    arr[j+1] = key1;
+    acc[j+1] = key2;
+}
+
+var result = "";
+
+for(var t=0;t<arr.length;t++)
+{
+  result = result + arr[t] + " "  ;
+ 
+}
+
+console.log(result.trim());
+  //end-here
+});
+*******************************************************************
+
+Share
+You are an employee of ‘Rox Travel’ channel.The channel has decided to give allowances to some customer who satisfy these conditions. The conditions are:
+
+The customer should be born on or before july 22 1987
+
+The month of D.O.B month should be of 31 days.
+
+You are given with the D.O.B of all the employees.Your task is to print the employee index who are having chance to avail special offer.
+
+Input Description:
+First line contains the number of employee.Next line contains an array of D.O.B of employees
+
+Output Description:
+Print the employee index (index at 1). Print-1 if there are no such employee
+
+Sample Input :
+Input
+4
+23 MARCH 1996 23 MARCH 1986 22 JULY 1987 23 APRIL 1987
+Sample Output :
+2 3
+
+answer:
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var x = parseInt(userInput[0]);
+var y = userInput[1].split(" ");
+
+var date1 = new Date(1987,6,22);
+
+var arr = [];
+
+var month = {
+    JANUARY : 0,
+    MARCH :2,
+    MAY :4,
+    JULY:6,
+    AUGUST:7,
+    OCTOBER:9,
+    DECEMBER:11
+};
+
+var result = "";
+var a=-3;
+var b=-2;
+var c=-1;
+for(var i=0;i<x;i++)
+{
+     a=a+3;
+     b=b+3;
+     c=c+3;
+       var date2 ;
+        
+        if(month[y[b]])
+        {
+            date2 = new Date(y[c],month[y[b]],y[a]);
+           
+            if(date1>=date2)
+            {
+                result =result + (i+1) + " ";
+            }
+
+    }
+}
+
+console.log(result.trim());
+
+
+
+  //end-here
+});
+***********************************************************
+charCodeAt(0);
+
+returns the ascii value of zeroth element of the string
+
+****************************************************************
+Write a program to get a string S, Type of conversion (1 - Convert to Lowercase, 2 - Convert to Uppercase) T, and integer P . Convert the case of the letters in the positions which are multiples of P.(1 based indexing).
+
+Input Description:
+Given a string S, Type of conversion T, and integer P
+
+Output Description:
+Convert the case of the letters and print the string
+
+Sample Input :
+ProFiLe
+1
+2
+Sample Output :
+Profile
+
+var x = userInput[0];
+var a =[];
+var y= parseInt(userInput[1]);
+var z= parseInt(userInput[2]);
+
+var result ="";
+for(var j=0;j<x.length;j++)
+{
+  a[j+1]  = x[j];
+}
+for(var i=1;i<= x.length;i++)
+{
+    if(y==1)
+    {
+       if((i%z)===0) 
+      {
+          let b = "";
+          b= b +a[i];
+        result = result + b.toLowerCase() ;
+      }
+       else
+       {
+        result = result + a[i] ;
+       }
+    }
+    
+    else if(y == 2)
+    {
+         if((i%z)===0) 
+       {
+          let b = "";
+          b= b +a[i];
+        result = result + b.toUpperCase() ;
+       }
+           
+       
+         else
+       {
+          result = result + a[i] ;  
+       } 
+    }
+}
+
+console.log(result);

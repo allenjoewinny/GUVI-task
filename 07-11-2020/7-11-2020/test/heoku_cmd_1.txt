@@ -1,0 +1,89 @@
+Microsoft Windows [Version 10.0.18362.959]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\json-server-heroku>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/c2f42e77-55cb-4e9d-92a2-c5dc45460975
+Logging in... done
+Logged in as allenjoewinny@gmail.com
+
+D:\json-server-heroku>
+D:\json-server-heroku>heroku create allen-demo2
+Creating ⬢ allen-demo2... done
+https://allen-demo2.herokuapp.com/ | https://git.heroku.com/allen-demo2.git
+
+D:\json-server-heroku>git remote -v
+heroku  https://git.heroku.com/allen-demo2.git (fetch)
+heroku  https://git.heroku.com/allen-demo2.git (push)
+origin  https://github.com/reach2arunprakash/json-server-heroku.git (fetch)
+origin  https://github.com/reach2arunprakash/json-server-heroku.git (push)
+
+D:\json-server-heroku>git push heroku master
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 220.20 KiB | 11.01 MiB/s, done.
+Total 22 (delta 7), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:        NODE_VERBOSE=false
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 12.x...
+remote:        Downloading and installing node 12.18.3
+remote:        Using default npm version: 6.14.6
+remote:
+remote: -----> Installing dependencies
+remote:        Installing node modules (package.json)
+remote:        added 224 packages from 121 contributors and audited 224 packages in 7.546s
+remote:
+remote:        1 package is looking for funding
+remote:          run `npm fund` for details
+remote:
+remote:        found 2 low severity vulnerabilities
+remote:          run `npm audit fix` to fix them, or `npm audit` for details
+remote:
+remote: -----> Build
+remote:
+remote: -----> Caching build
+remote:        - node_modules
+remote:
+remote: -----> Pruning devDependencies
+remote:        audited 224 packages in 2.113s
+remote:
+remote:        1 package is looking for funding
+remote:          run `npm fund` for details
+remote:
+remote:        found 2 low severity vulnerabilities
+remote:          run `npm audit fix` to fix them, or `npm audit` for details
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 24.7M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://allen-demo2.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/allen-demo2.git
+ * [new branch]      master -> master
+
+D:\json-server-heroku>heroku open
+
+D:\json-server-heroku>

@@ -1,0 +1,65 @@
+arun prakash github:
+
+https://github.com/reach2arunprakash
+
+
+https://github.com/reach2arunprakash/javascript-101
+
+https://github.com/reach2arunprakash/Data-Structures
+
+goggle interview
+
+*********************************************************
+focus on
+
+js101
+ds
+interview goggle
+
+*****************************************************
+http://infolab.stanford.edu/~backrub/google.html
+
+https://github.com/reach2arunprakash/javascript-101/tree/master/ppt
+********************************************************
+
+procedure
+
+
+MERN:
+js-basics -es6
+js -adv -promise
+html -css - rwd -bootstrap
+dom manui
+hackathon
+react and redux
+node -mongo &postgress
+hack
+ds
+assement - 4 - 5 pract
+python & Flask
+sys Design
+AWS
+***************************************************
+
+ask arun valautha for the mentor
+
+********************************************************
+pirates of silicon vally
+
+javascript name is owened by sun microsstem
+*******************************************************
+webassembly
+
+html is stored in dom (document object model)
+
+dom:
+in memory representation of the html file.
+
+**********************************************************
+todays task :
+
+watch browser wars
+
+pirates of silicon vally
+
+https://www.youtube.com/watch?v=ePQ23LMhRTE

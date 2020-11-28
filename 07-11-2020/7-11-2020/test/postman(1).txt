@@ -1,0 +1,13 @@
+download the post man for the windows
+
+instal the postman.exe
+
+watched the vedio:
+
+https://www.youtube.com/watch?v=eYQyqf-DtCQ
+
+read the website regardind the post request :
+https://www.toolsqa.com/postman/post-request-in-postman/
+
+notes:
+

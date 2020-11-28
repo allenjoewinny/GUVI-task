@@ -1,0 +1,62 @@
+http (Hpertext Transfer Protocol)
+
+it is the application protocol which is foundation for application protocol.
+
+it is the foundation  for the data communication in world wide web.
+
+**********************************************************************************
+
+The below link showes the difference between the http1.1 and http2
+
+http://imagekit.io/demo/http2-vs-http1?utm_source=blog&utm_medium=blog&utm_campaign=Blog
+
+short comes of the http1.1 was more prominent when the more and more data was loaded in single page
+
+1.ONE OPEN REQUEST PER CONNECTION:
+
+http1.1 practically supports only one outstnding request per tcp connection (thougth the http 
+pipeline supports more the one outstanding request)
+
+browsers avoid this limitations by having muliple parallel tcp connections to every domain 
+
+number of parallel connection varied per browser.
+
+Dupplication of the data:
+
+duplication of data accross the request (header and cookies)
+
+this leds to devolepment of techniques like image sprites and domain sharding.
+
+Advantages of HTTP/2
+
+http/2 was buid over google's spdy protocol 
+
+Multiplexed insted of ordered :
+
+(allows using same tcp connection for mutiple parallel request)
+
+
+Header compression using HPACK:
+
+(compressed header,redused data redundancy)
+
+server push :
+
+instead of wating for the client to request for the asserts like js and css, the 
+server can push the resourses it belives required by the client.so it avoid the round trip.
+
+************************************************************************************************************************************
+an useful vedio about the comparesion:
+
+https://youtu.be/0L5Q_897fwk
+
+image camaresion of the http/1.1 and http/2:
+
+https://www.linkedin.com/pulse/what-difference-between-http-12-20-versions-why-should-anand-bhagwat/
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+var request = new XMLHttpRequest()
+var url_string = 'https://api.domainsdb.info/v1/domains/search?domain=facebook&zone=com';
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET',url_string , true) 
+
+
+  // Track the state changes of the request
+  request.setRequestHeader("content-type","application/json");
+  request.onreadystatechange = function(){
+    // Ready state 4 means the request is done
+    if(request.readyState === 4){
+      // 200 is a successful return
+      if(request.status === 200){
+        var data = JSON.parse(request.responseText)
+         console.log(data); // 'This is the returned text.'
+      }else{
+        alert('Error: '+request.status); // An error occurred during the request
+      }
+    }
+  }
+
+request.send();

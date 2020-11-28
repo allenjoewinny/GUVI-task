@@ -1,0 +1,86 @@
+important:
+
+do the postman and the heroku task
+
+https://github.com/chavanrohit44/guvi_tasks/blob/master/guvi_json_week2_day1.js
+
+http://1429dd531f60.ngrok.io/something
+
+https://github.com/nancycatherine/guvicodekata/tree/master/WeekendTask/25.07.20
+
+https://git.heroku.com/my-jsonserver.git (your app name)
+
+https://stackoverflow.com/questions/18406721/heroku-does-not-appear-to-be-a-git-repository
+
+0.Import helper module --> ar fs = requers ("fs");
+1. open the file 
+2. you will have string
+3. write
+4.close
+
+****************************************************************
+copy by vlue and copy by refference
+
+important :(500 gerkcoin)
+
+Why Objects are copied by ref? where as Primitives are copied by value??
+
+***************************************************************
+window in console of inspect element
+
+***********************************************************
+objects:
+
+in javascript array see the recording
+
+if we areaccessing the undefined.
+we will get 
+
+un caught error
+
+
+in an cougth error script will not stop
+
+in un caught erroe script stops
+
+example for caught error
+
+try
+{
+console.log(ttt);
+console.log(ttt.tt);
+}
+cache(ee)
+{
+console.log(ee);
+}
+
+*************************************************************
+API
+
+AJAX asnchronous  Js and XML
+
+read the corse
+
+do the :
+
+https://github.com/reach2arunprakash/javascript-101/tree/master/workouts-100/jsontask
+
+Task :
+1. Use typeof in all the datatypes and check the result
+ 
+
+2.     in the task of xmlhttprequest
+
+read the feach
+
+_ undescore package
+
+*******************************************************************
+
+
+(2 to 5 ) time to cleare the doubt with banu prakash
+
+******************************************************************
+json server is fake server
+

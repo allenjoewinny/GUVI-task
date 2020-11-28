@@ -1,0 +1,305 @@
+2.Why we need an IP address and mac address?
+
+each computer has mac and ip address assigned to it
+
+ip address are routable
+
+not every computer can send to multiple group of people 
+but one which does this is called as the router
+
+routers rote message between different group of computers
+
+mac address are physical and are not routable
+
+mac address handles the physical connection between the
+computers 
+
+ip address handles the logical routable connection between computer
+to computers and network to networks
+
+mac/physical address is a gloabaly the unique id for your device
+
+mac address is efficent for the local communication.
+
+if the hardware is lost the mack address is lossed.
+
+ip address saw where  you are
+
+mac address tells who you are
+
+ip address is flexible and changable.
+
+**************************************************************
+3.	Are JS and Java are the same?
+
+javascript is a light weigted programming language 
+used to make the web page interactive.
+
+where as the java is object orented language used to 
+create the applicatoin and run in a virtual machine or 
+browser.
+
+though the name are similar they are used for the marketing purpose.
+
+*******************************************************
+4.	What are the various Layout and JS engines?
+
+java script engine:
+
+chrome : v8
+firefox : spidermonkey
+safari: javascriptcore
+edge :chakra
+
+v8 is written in c++
+
+v8 convers the javascript code into optimized machine code
+
+v8 thread has four threads
+
+main thread   fetch->compile->execute
+
+compiler tread  Full-codegen  crankshaft
+
+profiiler thread  monitors code and finds out hot section (ie iterating elements and the recursive elements)
+
+gc thread  garbage collection
+
+full-codegen is creates the machine level code
+
+crankshaft is used for optimization 
+
+the job of the browser engine is :
+
+1. prosses the HTML markup and build the DOM tree.
+2.Process CSS markup and build theCSSOM tree
+3.combine te Dom and CSSOM into a render tree.
+4.rum layout on the render treeto compute geometry of each node.
+5.paint the individual nodes to the screen
+
+diffrent brower engines are:
+
+for chrome and opera it is blink
+internet explorer trident
+mozillafierfox it is gecko 
+safare wedkit
+
+********************************************
+5.	What's a programming paradigm?
+
+ it is a method to solve problem or do some task
+
+to implement an programming language we need 
+to follow some statergy .this startergy is called as the the 
+programming paradigm.
+
+they are devided into two :
+
+1.imperitive programming paradigm
+
+2.Declarative programming paradigm
+
+imperaive programming paradigm:
+
+is devided into 
+
+1.procedural programming paradiigm
+2.object orented programming
+3.parallel processing approach
+
+it is based on the von neuman architecture
+
+it perfoms setp by step task by changging states
+
+the main focus is on how to achive the goal
+
+this type of paradigm consist of several statements and
+after execution of all the result is stored
+
+disadvantage:
+
+complex problem can not be solved
+
+less effective and less productive
+
+prallel programmng is not possible
+
+declarative programming paradigm:
+
+it is sub devided into logic,functional and database
+
+declrative programming is the style of building program that expresses logic of 
+computation without taking about its control
+
+focus is on wat neede to be done rather thean how it should
+be done
+
+*************************************************************
+
+6.	Features of JS?
+
+1. validating uer input
+2. simple client side calculaton
+3. greaer control
+4. platform independent
+5. handling date and time 
+6. generating HTML content
+
+*****************************************************************
+7.	What happens when you hit a website? Explain the flow in detail.
+
+https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a
+
+
+when we enter a website name and clik enter
+
+the the browser check the cathe for a dns record to find
+the coresponding ip addess for the website
+
+DNS domain name service maintains the website URL and its
+coresponding ip address associated with it.
+
+ip address belongs to the computer which host the server of
+the website
+
+first it checks the brower cache (browser maintains a repository
+of dns record for a fixed duration for website youhave previously
+visited.
+
+if not found in the dowser cache the drowser makes the system call
+to the undelying os to fech record scienc the OS also
+maintains the dns record.
+
+thrid it checks with router cache Router maintains its one 
+cach of DNS record
+
+fouth (at last) it checks withe the ISP cache 
+ISP has a DNS server which has the set of cache 
+
+if the requeste URL is not found in the cache ,ISP'S
+DNS server initiates the DNS Query to find the ip address 
+of the sere that host
+
+the pupose of a DNs Query is to suearch multiple DNS servers on the internet util
+it finsd the correct IP address of the website.
+
+this type of search is called as the recursive search..
+
+then the browser initiates the tcp connection with the server
+when the browser gets the correct ip address
+
+browser use the internet protocolto build connection
+
+tcp is most commenly used for many types of http request
+
+to trasfer data packet for our computer to the sever we need 
+to have TCP connection eshtablished.
+
+the process is called as TCP/IP three way handshake
+
+=>
+
+1.client machine sends the SYN (synchronize)packet to the
+sever over the internt to ask if it open for new connection
+
+2.if the server has open port that can accept and invite a
+new connection it responds with an ACK packet for the SYN 
+using SYN/ACK packet.
+
+3. the client will resceice the SYN/ACK packet from the
+serve and aknowledge it with the help of ACK packet.
+
+then a TCP connection is established for data transmission.
+
+then the browser send the get request for asking the web page.
+
+the request will have th additional details such as 
+browser identification,type of request that it will accept
+and connection header asking it to keep the connection open.
+
+serer contains a webserver that receives the request from the
+browser and send it to the request handler .
+
+request handler is a programm that read the request ,its heade and
+ cookies to check what is being requested and updates the 
+information on the server if needed.then it wil assemble a 
+response in a particular format
+
+ server response contains the web page, stasus code ,
+compression type,how to cache the page ,any cooies to set ,
+privacy information etc.
+
+browser first gets the HTML skeliton of the page
+following the HTML tags the Browser fetches the css,stylesheet,
+javasript files.
+
+************************************************************************
+8.	What are the HTTP error codes?
+the status code in tht server res[one is a 3 digit integer where the first digit of the
+ststus code defines the class of resope and the last two digits do not have any 
+categorization 
+
+their are two http error codes
+
+1. which start with 4XX called the client error
+
+it means the request contains incorrect syntax or cannot be fullfiled
+
+example:
+
+400 means bad request
+
+401 means unauthorized
+
+2. which starts with 5XX server error 
+
+it means the server faield to fulfill an apparently vaild request
+
+example
+
+500 internet server error
+
+501 not implemented
+
+******************************************************************
+
+
+**********************************************************
+11.	What's the default browser method?
+
+Brower method lets us to access a running web browser application 
+
+we can use to access a specific web browser
+********************************************************************
+HTTP hearder lets the client and the server pass addition information
+with an HTTP request or response.
+
+headers can be grouped according to their context like:
+
+general headers
+
+Request headers
+
+respose headers
+
+entity header
+
+end to end header:
+
+these header must be tranmitted to the final recipient of the message.
+the sever for a request, or the client for a response.Imtermediate proxies
+must etransmit these headers unmodified and cache must store them.
+
+
+hop by hop header:
+these heade are meaningful only for a single transport-level
+connection , and most not be retransmitted by proxies or cached.
+only hop-by-hop header must be set using the connection general header .
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#:~:text=HTTP%20headers%20let%20the%20client,)%2C%20then%20by%20its%20value.&text=Entity%20headers%20contain%20information%20about,content%20length%20or%20MIME%20type.
+
+*******************************************************************
+
+
+ 
+

@@ -1,0 +1,58 @@
+refere :
+
+https://zen-wescoff-60b2b9.netlify.app/
+
+https://stupefied-roentgen-4e6625.netlify.app/
+
+https://github.com/SwathiRavi28/GUVI_prebootcamp/blob/master/Aug_15.html
+
+https://objective-knuth-47211e.netlify.app/
+
+
+what is css
+way to use css
+property and value
+class vs id 
+use of important
+position property
+
+class is for css
+
+****************************************************
+to get different colours
+
+https://cssgradient.io/
+https://www.cssmatic.com/
+https://mycolor.space/gradient
+https://uigradients.com/#EasyMed
+https://www.css-gradient.com/
+
+************************************************
+
+check which () suported in which browser:
+
+https://caniuse.com/
+https://html-css-js.com/
+
+***********************************************************
+task for the day:
+
+https://gist.github.com/rvsp/735c2cf7cf360f797bae093fa2dfe04d
+
+do the two task in the link
+**********************************************************
+metrial for css (properties)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS
+
+US/docs/Web/CSS
+
+https://www.w3schools.com/cssref/
+
+https://www.w3schools.com/css/
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+iterators:
+
+for 
+
+in(Es5) and of(Es6) works with -objects
+foreach(Es6) -array
+
+********************************************************
+
+function overloading:
+
+************************************************************
+annomuous function:
+
+var f =function(,b,c)
+{
+console.log(a);
+console.log(b);
+console.log(c);
+}
+
+all the event handelers is annomous function
+
+study:
+
+https://stackoverflow.com/questions/10273185/what-are-the-benefits-to-using-anonymous-functions-instead-of-named-functions-fo#:~:text=I%20use%20anonymous%20functions%20for,variables%20in%20the%20parent%20scopes.
+
+**********************************************************
+IIFE
+
+(function(a,b,c)
+{
+console.log(a);
+console.log(b);
+console.log(c);
+}
+)
+(10,20,30)
+
+********************************************************
+calling a function inside the function
+
+var s =function(a,b,c)
+{
+console.log(a);
+console.log(b);
+console.log(c);
+}
+
+function dd(a)
+{
+
+a(10,20,30);
+
+let rr = function ee(){console.log("Hi")}; ---> here we are creating a function inside a function it is called closures.
+return rr;
+}
+
+var tt = dd(s);
+tt();
+
+*************************************************************
+Task :
+
+function second(a,b) {
+	var opr1 = 10;
+	var opr2 = 90;
+	// body...
+}
+
+arr = [add,sub,mul];
+second(1,arr);  // 100
+second(2,arr);  // -80
+second(3,arr);  // 900
+add(a,d)
+{
+
+}
+sub(a,d)
+{
+	
+}
+mul(a,d)
+{
+	
+}
+
+use the above code
+***********************************************
+
+do the madoyury task
+
+and other task 
+******************************************************
+arrow functions
+
+(a,b)=>a+b
+
+****************************************************
+MRF
+
+map reduce filter
+
+
+eample for the filter
+
+ = [10,20,300,400,499,70];
+
+function f(a)
+{
+	var b=[];
+	for (var i = 0; i < a.length ; i++) {
+		if(a[i]<100)
+		{
+			b.push(a[i])
+		}
+
+}
+	return b;
+}
+
+function f1(item)
+{
+   return item<100;
+}
+
+c = f(a)
+console.log(c);
+
+ss = a.filter(f1)
+console.log(ss);
+
+whatch this vedio:
+
+https://www.youtube.com/watch?v=R8rmfD9Y5-c
+
+***********************************************************
+Task of the day:
+
+1. Callback task - Task for callback ( in Slide )
+2. Anyo & IIFE - Do the below programs in anonymous function & IIFE ( in Slide)
+
+
+Rest countries:
+
+Get the countries in asia - filter 
+Get the countries with population less than 2L - fliter
+Bumpup the current population  of all the counteirs by 1L - Map 
+convert all the names in capital - map
+print follwoig details  name , capital , flag  - foreach,filter
+
+Print the total population of the countries  - reduce
+Print the total population of the countries in asia - filter & reduce
+
+https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f
+
+*************************************************************
+class is a template 
+
+object is inside it
+
+idly plate is class
+
+idy is object
+**************************************************************
+
+

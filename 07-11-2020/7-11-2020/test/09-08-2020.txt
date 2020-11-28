@@ -1,0 +1,127 @@
+UML
+
+class Bank{
+
+constructructor()
+
+*********************************************************
+
+a = [10 elms]
+
+b=a
+
+simple copy also screwa -lots
+complex struct  - natturally screws u 
+
+*********************************************************
+spread syntax
+
+let a =[11,22,44];
+let b = [...a];
+
+this is copy by value and avoids the copy by refference
+
+*********************************************************
+rest operator:
+
+function f(...a)
+{
+
+console.log(a);
+
+}
+
+f(10)
+f(10,10)
+f(10,10,10,10)
+
+here the function accepts any number of input
+
+*** the rest operator alwaya comes in last argument ( in the number of argument)
+
+function a (aa,bb,...r)
+{
+console.log(aa,bb,r);
+
+}
+**********************************************************
+
+console.log(arguments)
+
+arguments will contanin all the input arguments
+
+argument type is object
+
+***********************************************************
+console.dir(f);
+
+will print the function f;
+
+***********************************************************
+
+a =[10,30,40,50];
+
+b = a[1];
+c = a[2];
+d = a[3];
+e= a[0];
+
+
+insteread of the above:
+
+[e1,b1,c1,d1] = [10,30,40,50];
+
+********************************************************
+Apply and call
+
+the difference is call an be given as
+
+f.call(obj,10,'arun);
+f.apply(obj,[10,'apply']);
+
+apply needed to be given in array
+
+obj ={(a:inside the obj")
+
+function f(b,c)
+{
+console.log(a,b,c);
+}
+}
+
+********************************************************
+
+read:
+
+https://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
+
+
+************************************************
+
+Bind:
+
+************************************************************
+topics covered by arun:
+
+1. Browsers 
+2. Why JS
+3. Node vs Browsers
+4. Protocols - Header
+5. API hit - copy pasted
+	xmlhttpreq
+		open
+		cors
+		Auth
+			API
+			OAuth
+6. Internal - Array
+7. Null vs UD
+8. COpy by val vs by ref
+9. Fucntion - return, default para, anyo , IIFE , Callback , Arrow
+10. Array methods
+11. OOPS - this 
+12. Spread rest 
+13. Call apply bind
+
+
+

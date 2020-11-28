@@ -1,0 +1,71 @@
+to compile a c program using the cmd
+
+save the file using notepad in .c extension
+
+in the cmd 
+
+1. gcc file.c
+2.a
+
+(get the output)
+
+****************************************************
+rmdir 
+
+to delete the directory
+
+****************************************************
+copy
+
+to copy a file to another folder
+
+example:
+
+copy file_to_copy.c another_folder
+*****************************************************
+copy *.*
+
+is to copy all the files 
+****************************************************
+to concatinate 2 files
+
+copy file1.txt+file2.txt science\text.c
+*****************************************************
+xcopy
+
+xcopy /s science maths
+
+to copy all the things of science folder to maths folder
+******************************************************
+del
+
+deleting a file
+
+ex del file.text
+*******************************************************
+del *.*
+
+to delete all the files
+********************************************************
+to open a file 
+
+type the file name with extention
+
+ex: file.txt
+********************************************************
+./target/debug/newtry.exe
+
+to run the exe file
+********************************************************
+cargo new gh --lib
+
+it is static libray
+*********************************************************
+toml
+
+toms obeus minimal language
+*********************************************************
+keywords
+
+read in the appendex first 
+*********************************************************

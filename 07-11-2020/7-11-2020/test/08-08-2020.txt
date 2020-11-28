@@ -1,0 +1,81 @@
+object oreneted paradigm is expected in companies
+
+
+************************************************************
+
+Es6 only class key word is introduced
+
+baabel will be ued to convert the es6 to es5
+
+**********************************************************
+
+evething boils to es5 with is function based object creation
+
+***********************************************************
+
+class(function)
+obj-create
+method(variable)- define and call
+
+this ->refers to the current object
+
+variable is a part of the constructor
+*************************************************************
+
+anything in the grobal scope it has windows propertie
+
+function f1()
+{
+  console.log(this === window);
+}
+*****************************************************
+
+lexical scope is the place where the code will find the material it needs
+
+**************************************************
+class A{
+	constructor(n)
+	{
+		this.name = n
+	}
+	f1() { var name = "dummy";
+	console.log(this.name);console.log(name)}// runs in the lexical scope of obj
+}
+ obj = new A("arun") // {"name":"arun"}
+ obj1 = new A("Prakash") //{"name":"Prakash"}
+
+
+obj.f1()
+obj1.f1()
+
+
+here the var name ="dummy is ignored  because the object name is taken
+
+****************************************************
+classes are not hoisted
+*****************************************************
+
+class task:
+
+https://docs.google.com/document/d/1AB04kg6FD9UuJgfW3P9Ml_Ol9tFCNJRVT2mx4jPKK3U/edit
+1st task alone write the code:
+
+write a calculator :
+
+class calc
+{
+add 
+sub
+mul
+}
+
+ 
+(in UML read it)
+
+***************************************************
+
+containment(arun) vs inheritance
+
+*****************************************************
+
+

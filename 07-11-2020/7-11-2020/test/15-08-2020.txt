@@ -1,0 +1,74 @@
+HTML Introduction
+
+todays task :
+
+https://tin.tin.nsdl.com/pan/changerequest.html
+
+https://gist.github.com/rvsp/da08f5ffa59a76699213036005ee0f44
+
+
+topics covered today:
+
+html
+html structure & meta
+some basic html tags
+    p, ul,ol,div,head,footer,section,span,table,
+
+html forms
+    method->get,post, action
+    input elements -> text,email,select tag,label, button -> disable, selected, placeholder, value, id, name, required, autofocus, autocomplete, multiple, for in label, optgroup in select tag, submit/button/reset, 
+    onclick vs onsubmit
+
+************************************************
+data structures:
+
+how scalable you are
+
+work in product based company
+
+no fix time 
+
+try to learn one object orented language
+and learn one functional language.
+
+how to prepare for the interview:
+
+practiese in leetcode code chef  interviewbit
+
+books
+{
+
+cracking the coding interview -gayle
+
+algorithms made easy
+
+}
+
+read the book for c++ written by his inventer
+
+
+Chandramowli J
+
+https://www.linkedin.com/in/chamow/
+
+9445640398
+
+start with stack and queue
+
+https://docs.google.com/presentation/d/1mcrdJEjsM3buGQXLLKvHw5Qbl_1ekE2nsYOllktMuek/edit?usp=sharing
+
+***********************************************************
+
+<span>:
+
+is used for the inline argument 
+
+<section> :
+
+is used to group the similar kind of elements
+
+
+
+
+
+

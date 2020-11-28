@@ -1,0 +1,91 @@
+bootstap
+
+
+alternate or coustom bootstrap
+fondation css
+
+MDB
+
+Bulma
+
+Semantic ui
+
+materialcss
+
+**********************************************************
+<head>
+<link rel='stylsheet' href ='http://stackpath.bootstrap.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+
+.my-container{
+
+bagroundround-color: red;
+}
+
+</style>
+
+
+<div>
+
+</div>
+
+
+
+******************************************************
+
+container will have the padding 
+
+container fluid will occupy full screen
+
+*********************************************************
+
+in bootstap Grid:
+
+that is the page (row) is splited into 12 columns
+
+and each row can be again spleted into 12 columns
+
+<div class =col-4 bg-dark">1</div>
+
+here the number of column is 4
+
+and 8 more columns are left empty
+
+***********************************************************
+
+nexting:
+
+<div class ="contaner my-container mt-5">
+<div class = "row">
+
+<div class ="col-1 bg-dark>1</div>
+<div class ="col-1 bg-dark>1</div>
+<div class ="col-1 bg-dark>1</div>
+<div class ="col-1 bg-dark>1</div>
+</div>
+</div>
+
+here in a contaner column their is row which is 
+accommidating 4 columns
+
+************************************************************
+boatstrap code :
+
+https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css
+
+*************************************************
+
+task of the day:
+
+https://previews.123rf.com/images/irinaww/irinaww1801/irinaww180100002/93838397-newspaper-template-layout-print-design-with-dark-red-and-black-elements-vector-pages.jpg
+
+https://images.template.net/wp-content/uploads/2017/03/political-newspaper.jpg
+
+*********************************************************
+radom text:
+
+https://www.lipsum.com/
+
+
+

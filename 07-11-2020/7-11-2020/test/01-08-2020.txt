@@ -1,0 +1,86 @@
+cros:
+
+guvi.in -->brower --> s3 (setting - www.guvi.in)
+
+server in it we have the setting to enable the cros
+
+proxy is loophole
+
+Rest stands for the :
+Representation state transfer
+
+
+**********************************************************
+douglas crockford
+
+json implementer watch the vedio
+*****************************************************
+
+difference between the rest and restfull
+
+******************************************************
+for errors
+
+https://www.joyent.com/node-js/production/design/errors
+
+if
+
+try-cache
+
+Task 1. when does the error occurs:
+
+xmlhttp request
+
+***********************************************************
+ask why for the question
+
+function hoist() {
+  console.log(a,b);
+  a = 20;
+  var b = 100;
+  console.log(a,b); 
+}
+hoist();
+console.log(a);
+console.log(window.a);
+console.log(b);
+
+window.a will make the a global variable
+**************************************************
+use strict will make hosting avoid
+
+so without declaring, we can make it a global variable?
+***********************************************************
+we cannot compare objects
+
+to compare we need to make the object string and the compare
+
+example
+
+JSON.stringify(a) = JSON.stringify(a1);
+
+***************************************************************
+the arguments overwrite the declared values
+
+for the example:
+
+function myfun(a=20,b)
+{
+}
+
+a1= myfun(10,20);
+|
+here the value of the a is overwritten as 10
+*********************************************************
+todays task :
+
+What is the difference between window, screen, and document in Javascript?
+JSON task 
+https://medium.com/@reach2arunprakash/guvi-zen-code-sprint-javascript-practice-problems-in-json-objects-and-list-49ac3356a8a5
+Add error handling to the xmlhttprequest code
+Convert the ppt into a writeup 
+https://www.slideshare.net/nzakas/enterprise-javascript-error-handling-presentation/25-C_ommunication_E_rrors_Invalid
+Find the fix – for the error slide
+
+
+

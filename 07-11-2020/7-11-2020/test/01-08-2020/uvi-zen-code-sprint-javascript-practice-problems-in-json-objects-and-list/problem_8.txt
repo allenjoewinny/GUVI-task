@@ -1,0 +1,67 @@
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var securityQuestions = [
+ {
+ question: 'What was your first pet’s name?',
+ expectedAnswer: 'FlufferNutter'
+ },
+ {
+ question: 'What was the model year of your first car?',
+ expectedAnswer: '1985'
+ },
+ {
+ question: 'What city were you born in?',
+ expectedAnswer: 'NYC'
+ }
+]
+
+var question = 'What was your first pet’s name?';
+var answer = 'FlufferNutter';
+var answer_2 ='fluffy';
+var temp;
+function chksecurityQuestions(a,b,c)
+{
+    for(let i=0;i<a.length;i++)
+    {
+        if(a[i]['question'] === b)
+        {
+            temp = a[i]['expectedAnswer'];
+            
+        }
+    }
+    
+    if(temp === c)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    
+ // your code here return true or false; 
+}
+
+var status = chksecurityQuestions(securityQuestions,question,answer);
+var status_2 = chksecurityQuestions(securityQuestions,question,answer_2);
+
+
+console.log(status);
+console.log(status_2);
+
+
+//end-here
+});
+
+
